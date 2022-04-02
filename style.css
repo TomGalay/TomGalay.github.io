@@ -571,13 +571,12 @@ button:active:before {
     width: 300px;
     height: 400px;
   }
-  .container .flip-card h1, .container .flip-card p {
-    margin: 1rem 1.25rem;
-  }
   .container .flip-card h1 {
+    margin: 1rem 1.25rem 0.35rem 1.25rem;
     font-size: 1rem;
   }
   .container .flip-card p {
+    margin: 0.35rem 1.25rem;
     font-size: 0.75rem;
   }
   .container .flip-card .git {

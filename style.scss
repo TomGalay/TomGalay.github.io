@@ -499,13 +499,12 @@ transition: background 0s;
                 width: 300px;
                 height: 400px;
             }
-            h1, p {
-                margin: 1rem 1.25rem;
-            }
             h1 {
+                margin: 1rem 1.25rem 0.35rem 1.25rem;
                 font-size: 1rem;
             }
             p {
+                margin: 0.35rem 1.25rem;
                 font-size: 0.75rem;
             }
             .git {
@@ -615,8 +614,5 @@ transition: background 0s;
 }
 
 @media screen and (max-width: 390px){
-    .container {
-       // width: 90%;
-    }
 }
 
