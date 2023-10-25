@@ -112,7 +112,8 @@ h2 {
 }
 
 h3 {
-  font-weight: 800;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 
 p {
@@ -193,6 +194,10 @@ p {
 
 .white a:hover {
   text-decoration: underline;
+}
+
+.rounded {
+  border-radius: 50px;
 }
 
 .tom {
