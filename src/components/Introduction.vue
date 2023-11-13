@@ -19,7 +19,7 @@
                         Contact Me
                     </a>
 
-                    <a href="/src/assets/portfolio/ISAIAH THOMAS GALAY_RESUME.pdf" target="_blank"
+                    <a v-bind:href="resumeLink" target="_blank"
                         class="px-7 py-3 md:px-9 md:py-3 m-1 font-medium md:font-semibold bg-gray-50 outline outline-offset-0 outline-1 outline-gray-700 text-gray-700 text-sm rounded-md hover:bg-gray-700 hover:text-gray-50 transition ease-linear duration-500">
                         View CV
                     </a>
@@ -32,3 +32,14 @@
     </div>
     
 </template>
+
+<script>
+import resume from '/src/assets/portfolio/ISAIAH THOMAS GALAY_RESUME.pdf'
+export default {
+	data() {
+		return {
+			resumeLink : resume
+		}
+	}
+};
+</script>

@@ -56,7 +56,7 @@
 				<li class="text-gray-100 hover:text-indigo-400"><a href="#projects">Projects</a></li>
 				<li class="text-gray-100 hover:text-indigo-400"><a href="#education">Education</a></li>
 				<li class="text-gray-100 hover:text-indigo-400">
-					<a href="./src/assets/portfolio/ISAIAH THOMAS GALAY_RESUME.pdf" target="_blank"
+					<a v-bind:href="resumeLink" target="_blank"
                         class="px-7 py-3 md:px-9 md:py-3 m-1 font-medium md:font-semibold bg-gray-50 outline outline-offset-0 outline-1 outline-gray-700 hover:outline-gray-50 text-gray-700 text-sm rounded-md hover:bg-gray-700 hover:text-gray-50 transition ease-linear duration-500">
                         View CV
                     </a>
@@ -67,11 +67,18 @@
 </template>
 <script>
 import { ref } from 'vue';
+import resume from '/src/assets/portfolio/ISAIAH THOMAS GALAY_RESUME.pdf'
+
 export default {
 	setup() {
 		let showMenu = ref(false);
 		const toggleNav = () => (showMenu.value = !showMenu.value);
 		return { showMenu, toggleNav };
 	},
+	data() {
+		return {
+			resumeLink : resume
+		}
+	}
 };
 </script>
