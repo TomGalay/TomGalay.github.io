@@ -35,6 +35,13 @@
                     </div>
                     <div
                         class="w-[200px] h-[200px] rounded-lg outline outline-2 outline-offset-0 outline-gray-200 overflow-hidden shadow-lg mx-auto flex flex-col justify-center align-items-center px-8 py-8">
+                        <img class="w-24 mx-auto" src="/src/assets/img/logos/logo-wordpress.svg" alt="HTML">
+                        <div class="px-6 py-2">
+                            <div class="font-bold font-questrial text-xl mb-2 text-center">WordPress</div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-[200px] h-[200px] rounded-lg outline outline-2 outline-offset-0 outline-gray-200 overflow-hidden shadow-lg mx-auto flex flex-col justify-center align-items-center px-8 py-8">
                         <img class="w-24 mx-auto" src="/src/assets/img/logos/logo-laravel.svg" alt="HTML">
                         <div class="px-6 py-2">
                             <div class="font-bold font-questrial text-xl mb-2 text-center">Laravel</div>
@@ -66,6 +73,13 @@
                         <img class="w-24 mx-auto" src="/src/assets/img/logos/logo-sass.svg" alt="HTML">
                         <div class="px-6 py-2">
                             <div class="font-bold font-questrial text-xl mb-2 text-center">Sass</div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-[200px] h-[200px] rounded-lg outline outline-2 outline-offset-0 outline-gray-200 overflow-hidden shadow-lg mx-auto flex flex-col justify-center align-items-center px-8 py-8">
+                        <img class="w-24 mx-auto" src="/src/assets/img/logos/logo-mysql.svg" alt="HTML">
+                        <div class="px-6 py-2">
+                            <div class="font-bold font-questrial text-xl mb-2 text-center">mySQL</div>
                         </div>
                     </div>
                 </div>
