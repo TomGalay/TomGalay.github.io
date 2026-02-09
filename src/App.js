@@ -29,18 +29,88 @@ function App() {
 
       {/* Hero Section */}
       <section id="home" className="hero">
+        {/* Animated background elements */}
+        <div className="hero-bg-elements">
+          <div className="floating-shape shape-1"></div>
+          <div className="floating-shape shape-2"></div>
+          <div className="floating-shape shape-3"></div>
+          <div className="animated-lines">
+            <svg viewBox="0 0 1200 600" preserveAspectRatio="none">
+              <polyline points="0,200 150,150 300,200 450,100 600,180 750,130 900,190 1050,140 1200,200" 
+                        className="line-1" fill="none" stroke="rgba(152, 215, 220, 0.15)" strokeWidth="2"/>
+              <polyline points="0,350 120,300 240,330 360,280 480,320 600,270 720,310 840,260 960,300 1080,250 1200,290" 
+                        className="line-2" fill="none" stroke="rgba(152, 215, 220, 0.1)" strokeWidth="2"/>
+            </svg>
+          </div>
+          <div className="tech-dots">
+            <span className="dot dot-1"></span>
+            <span className="dot dot-2"></span>
+            <span className="dot dot-3"></span>
+            <span className="dot dot-4"></span>
+            <span className="dot dot-5"></span>
+          </div>
+        </div>
+
         <div className="hero-content">
+          <div className="hero-label">Welcome to my portfolio</div>
+          
           <h1 className="hero-title">
-            Isaiah Thomas <strong>Galay</strong>
+            <span className="title-word">Isaiah</span>
+            <span className="title-word">Thomas</span>
+            <span className="title-highlight">Galay</span>
           </h1>
+          
           <p className="hero-subtitle">Full Stack Developer | Mobile & Web Specialist</p>
+          
           <p className="hero-description">
-            Crafting elegant, scalable solutions for web and mobile platforms. 
-            From Flutter apps to WordPress ecosystems, I bring ideas to life with cutting-edge technology.
+            Transforming ideas into elegant digital solutions. Specializing in scalable web applications, 
+            modern mobile development, and enterprise solutions.
           </p>
+
+          <div className="hero-stats">
+            <div className="stat-item">
+              <span className="stat-number">6+</span>
+              <span className="stat-label">Years Experience</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">15+</span>
+              <span className="stat-label">Projects Completed</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">10+</span>
+              <span className="stat-label">Technologies</span>
+            </div>
+          </div>
+
           <div className="hero-buttons">
-            <button className="btn btn-primary" onClick={() => scrollToSection('contact')}>Get In Touch</button>
-            <button className="btn btn-secondary" onClick={() => scrollToSection('experience')}>View My Work</button>
+            <button className="btn btn-primary" onClick={() => scrollToSection('contact')}>
+              <span>Get In Touch</span>
+              <span className="btn-arrow">→</span>
+            </button>
+            <button className="btn btn-secondary" onClick={() => scrollToSection('experience')}>
+              <span>View My Work</span>
+              <span className="btn-arrow">↓</span>
+            </button>
+          </div>
+
+          <div className="hero-scroll">
+            <span>Scroll to explore</span>
+            <div className="scroll-indicator">
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        {/* Tech icons floating */}
+        <div className="tech-icons">
+          <div className="tech-icon icon-1">
+            <span>{ }</span>
+          </div>
+          <div className="tech-icon icon-2">
+            <span>&lt;/&gt;</span>
+          </div>
+          <div className="tech-icon icon-3">
+            <span>◆</span>
           </div>
         </div>
       </section>
