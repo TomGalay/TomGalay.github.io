@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Chronicles of Elijah</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="vendor/tooltipster/dist/css/tooltipster.bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-borderless.min.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <header name="Access-Control-Allow-Origin" value="*"/>
+</head>
+
+<body>
+    <div class="loader">
+        <span id="story_line1"></span>
+        <span id="story_line2"></span>
+        <span id="story_line3"></span>
+        <span id="story_line4"></span>
+        <span id="story_line5">YOU WIN</span>
+        <span id="any">Press Spacebar to Skip Intro</span>
+        <div class="menu"></div>
+    </div>
+    <div class="battleground-container">
+        <div class="battleground">
+            <div id="player_box" class="box-container">
+                <div id="user" class="chara"></div>
+            </div>
+            <div id="en_box" class="box-container">
+                <div id="enemy_box" class="box-player">
+                    <div id="sprite_object" class="dragongod"></div>
+                    <span id="e_name_wrapper"><span id="e_name"></span> Lvl. <span id="e_lvl"></span></span>
+                    <div class="e-health-box">
+                        <div class="e-health-bar-red"></div>
+                        <div class="e-health-bar"></div>
+                        <div class="e-health-bar-text"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="action-text-wrapper">
+                <div class="action-text">
+                    <p id="log" class="text">Your Turn...</p>
+                </div>
+            </div>
+            <div class="stage-text-wrapper">
+                <div class="stage-text">
+                    <div class="progress">
+                        <p class="text">Stage: <span id="stage_no">0</span> Battle <span id="battle_no">0</span> of 3</p>
+
+                    </div>
+                </div>
+            </div>
+            <div id="w_p_div" class="player-damage-wrapper">
+                <div id="p_div" class="damage-text-div">
+                    <p id="player_damage" class="damage-text">1234567890</p>
+                </div>
+            </div>
+            <div id="w_e_div" class="enemy-damage-wrapper">
+                <div id="e_div" class="damage-text-div">
+                    <p id="enemy_damage" class="damage-text">1234567890</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="command">
+        <div class="status-bar" id="stats">
+            <div class="portrait-div">
+                <img src="assets/character_sprites/portrait.png" alt="" id="portrait">
+                <div class="xp-wrapper">
+                    XP: <span id="p_xp"></span>/<span id="p_reqxp"></span>
+                </div>
+                <div class="gold-wrapper">
+                    Gold: <span id="p_gold"></span>
+                </div>
+            </div>
+
+            <div class="player-info">
+                <div class="description-stats">
+                    <span><span id="p_name"></span>
+                        Level: <span id="p_lvl"></span></span>
+                    <div class="health-box">
+                        <div class="health-bar-red"></div>
+                        <div class="health-bar"></div>
+                        <div class="health-bar-text"></div>
+                    </div>
+                    <div class="mana-box">
+                        <div class="mana-bar-red"></div>
+                        <div class="mana-bar"></div>
+                        <div class="mana-bar-text"></div>
+                    </div>
+                </div>
+
+                <div class="misc-stats">
+                    <span>ATTACK: <span id="p_atk"></span></span>
+                    <span>DEFENSE: <span id="p_def"></span></span>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="actions-list">
+            <div class="skill-list">
+                <div id="atk1" class="action-btn">
+                    <img class="border border-white tooltip" data-tooltip-content="#slash_tooltip" src="assets/player/skills/slash.svg" width="50" height="50">
+                </div>
+                <div id="atk2" class="action-btn">
+                    <img class="border border-white tooltip" data-tooltip-content="#rend_tooltip" src="assets/player/skills/rend.svg" width="50" height="50">
+                </div>
+                <div id="atk3" class="action-btn">
+                    <img class="border border-white tooltip" data-tooltip-content="#overpower_tooltip" src="assets/player/skills/overpower.svg" width="50" height="50">
+                </div>
+                <div id="defend" class="action-btn">
+                    <img class="border border-white tooltip" data-tooltip-content="#defend_tooltip" src="assets/player/skills/block.svg" width="50" height="50">
+                </div>
+                <div id="heal" class="action-btn">
+                    <img class="border border-white tooltip" data-tooltip-content="#heal_tooltip" src="assets/player/skills/heal.svg" width="50" height="50">
+                </div>
+            </div>
+            <!--<div class="buff-list">
+                <img class="buff" src="assets/player/buffs/sharp-crown.svg">
+                <img class="buff" src="assets/player/buffs/sharp-crown.svg">
+                <img class="buff" src="assets/player/buffs/sharp-crown.svg">
+            </div>-->
+            <div class="buy-btn-list">
+                <button class="buy-btn tooltip" data-tooltip-content="#buy_atk_tooltip"  id="atk-buy">Increase Attack</button>
+                <button class="buy-btn tooltip" data-tooltip-content="#buy_def_tooltip" id="def-buy">Increase Defense</button>
+                <button class="buy-btn tooltip" data-tooltip-content="#buy_hp_tooltip" id="hp-buy">Increase HP</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="tooltip_templates">
+        <span id="slash_tooltip">
+            <p><strong>Slash</strong> <small>Cost: <span>0</span> MP</small>
+                <br>Swing your sword at the opponent.
+                <br>Deals <span id="slash_min">0</span> - <span id="slash_max">100</span> points of Damage
+                <br>Restores <span>20</span> mana</p>
+        </span>
+        <span id="rend_tooltip">
+            <p><strong>Rend</strong> <small>Cost: <span>20</span> MP</small>
+                <br>Expose your opponent's vital organs.
+                <br>Deals <span id="rend_min">0</span> - <span id="rend_max">100</span> points of Damage
+                <br>Induces Induces [Exposed] for <span>2</span> turns</p>
+        </span>
+        <span id="overpower_tooltip">
+            <p><strong>Overpower</strong> <small>Cost: <span>50</span> MP</small>
+                <br>Hit your opponent with all your might.
+                <br>Deals <span id="overpower_min">0</span> - <span id="overpower_max">100</span> points of Damage
+                <br>Uses quite a bit of mana</p>
+        </span>
+        <span id="defend_tooltip">
+            <p><strong>Defend</strong> <small>Cost: <span>50</span> MP</small>
+                <br>Raise your defenses for few turns.
+                <br>Deals <span>0</span> - <span>100</span> points of Damage
+                <br>Adds <span>0</span> defense for <span>0</span> turns</p>
+        </span>
+        <span id="heal_tooltip">
+            <p><strong>Heal</strong> <small>Cost: <span>50</span> MP</small>
+                <br>Restore your health.
+                <br>Restores <span>20</span> points of hp</p>
+        </span>
+        <span id="buy_atk_tooltip">
+            <p><strong>Increase Attack</strong> <small>Cost: <span id="atk_price">25</span> Gold</small>
+                <br>Add 15 point of attack.</p>
+        </span>
+        <span id="buy_def_tooltip">
+            <p><strong>Increase Defense</strong> <small>Cost: <span id="def_price">50</span> Gold</small>
+                <br>Add 0.5 point of defense.</p>
+        </span>
+        <span id="buy_hp_tooltip">
+            <p><strong>Increase HP</strong> <small>Cost: <span id="hp_price">50</span> Gold</small>
+                <br>Add 100 points of HP</p>
+        </span>
+    </div>
+    <span>HP: <span id="p_hp"></span>/<span id="p_maxhp"></span></span>
+    <span>MP: <span id="p_mp"></span>/<span id="p_maxmp"></span></span>
+    Enemy HP: <span id="e_hp"></span>/<span id="e_maxhp"></span>
+    <div class="enemy-info">
+
+        <span>ATTACK: <span id="e_atk"></span></span>
+        <span>DEFENSE: <span id="e_def"></span></span>
+    </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <link rel="search" href="vendor/jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script type="text/javascript" src="vendor/tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster({
+                theme: 'tooltipster-borderless'
+            });
+        });
+    </script>
+</body>
+
+</html>
