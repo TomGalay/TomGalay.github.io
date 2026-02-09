@@ -484,15 +484,105 @@ function App() {
                 <div className="award-item">
                   <div className="award-icon">🏆</div>
                   <div className="award-content">
-                    <h4>Most Outstanding ITE Student</h4>
-                    <p>Philippine Society of Information Technology Educators (PSITE) · 2022</p>
+                    <h4>Summa Cum Laude</h4>
+                    <p>Issued by FEU Alabang · Jan 2023</p>
+                    <a href="https://www.facebook.com/FEUAlabang/photos/a.1304249696289861/5460492983998824/" target="_blank" rel="noopener noreferrer" className="view-link">View</a>
                   </div>
                 </div>
                 <div className="award-item">
                   <div className="award-icon">⭐</div>
                   <div className="award-content">
                     <h4>Academic Excellence Award</h4>
-                    <p>Junior Philippine Computer Society (JPCS) · 2022</p>
+                    <p>Issued by Junior Philippine Computer Society (JPCS) · Aug 2022</p>
+                    <a href="https://www.facebook.com/FEUAlabang/photos/a.1304249696289861/5460492983998824/" target="_blank" rel="noopener noreferrer" className="view-link">View</a>
+                  </div>
+                </div>
+                <div className="award-item">
+                  <div className="award-icon">🎖</div>
+                  <div className="award-content">
+                    <h4>Most Outstanding ITE Student</h4>
+                    <p>Philippine Society of Information Technology Educators (PSITE) - NCR · Jun 2022</p>
+                    <a href="https://www.facebook.com/FEUAlabang/posts/tamaraw-spotlight-congratulations-to-our-bsit-wma-student-isaiah-thomas-a-galay-/5346110262103764/?paipv=0&eav=AfbtE0EuiMMTtPbJl1VL0-HkkwxQeNTenjL55aQMxfDipn_BGyZgas7ilUynrZh_Zhg&_rdr" target="_blank" rel="noopener noreferrer" className="view-link">View</a>
+                  </div>
+                </div>
+                <div className="award-item">
+                  <div className="award-icon">📚</div>
+                  <div className="award-content">
+                    <h4>Best Research</h4>
+                    <p>Issued by FEU Alabang · Aug 2022</p>
+                    <a href="https://www.facebook.com/Eureka2022/posts/pfbid0xSqN8hugqB3RwYx3PWAYtMVaTbBYFPnV9aTfc4MueuizXSYBC4BoTWX6fzdZ4eqnl" target="_blank" rel="noopener noreferrer" className="view-link">View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="competitions-section">
+              <h3>Competitions</h3>
+              <div className="competitions-list">
+                <div className="award-item">
+                  <div className="award-icon">🥇</div>
+                  <div className="award-content">
+                    <h4>Microsoft Azure Fundamentals Challenge</h4>
+                    <p>(Microsoft Cloud Skills Challenge 2021) · Champion</p>
+                    <a href="https://www.facebook.com/FEUAlabang/posts/pfbid038M4S1smQvnA2BqsG5w5dAv4KQJPpQfymBivm8qLk244Qfn48wGYjzwZnY2kZFF6pl" target="_blank" rel="noopener noreferrer" className="view-link">View</a>
+                  </div>
+                </div>
+                <div className="award-item">
+                  <div className="award-icon">🥇</div>
+                  <div className="award-content">
+                    <h4>Ideathon Competition 2021</h4>
+                    <p>UP Cursor's Computer Science Summit · Champion</p>
+                    <a href="https://www.facebook.com/JPCSFEUA/posts/pfbid02TbBuBbhN8o1hwFcHVpz2Rqo1UXPeEQ3vLKQuTapMFrg9oD6s5CEVtmmX8Hhheoiyl" target="_blank" rel="noopener noreferrer" className="view-link">View</a>
+                  </div>
+                </div>
+                <div className="award-item">
+                  <div className="award-icon">🥇</div>
+                  <div className="award-content">
+                    <h4>Java Programming Competition</h4>
+                    <p>10th IT Skills Olympics 2021 · Champion</p>
+                    <a href="https://www.facebook.com/FEUAlabang/photos/basw.AbraUoWYpgNEpr7Tv2bRu-gzPx16ebXrGPwCQHTfo1qMWySghGGr3qoHc7dMWW-bka-zstVQQt-gwy0-ni75snKyi7BgW1mHHRQb3ln3Sb5tODDQddN91gzeO2I5n9wDzIcyIzdXEXoCKI2ocqNx3hrl/4514163658631766/?opaqueCursor=AbqpxaGd-bs2C3IMDLTjz4pRE1flzClY2dgjjxYa5k0DRi5c7ZQv_VA4wXGjqsQGOERPvtZRw8jKPrg_p35SnT2NVhgKlGHUFarvPrMh11jZLnTBKaa0TS7rr7IjVLZLw9dcjAaQgQU10Z51U2m0ypElbQoFsq_ji38AzKkWWPD9m3o3dtKXr87Os8-lLF0QjHg88p5DSKEqN3WgZzHqJDeRFTgQf364A-DY5x8dzV-lX83PKoc_V0L3ZiR6UneE69kRB8pcVtl1E96S2mV04mqz_GW40OYowvS_uyfPqGKEDXysEE7IaZi7GBVRD0oj82HTs8UaWGfM_lSSGvPAFworgh2ybUcTnmJxlMh3mWV5w9karl45rf13PwEJ_eq4F2ejkHyK8mjRwey6XoBKHfJKsxYBFXfeufQpYMI4VqLX7AxS6DcTsIJ8AFSlZtcWFekGRxFZHNhrYebkJ8U3-DdRcYq_b-aCmBtL8Hlwcq_58u_DGb9xLqXuFI7Vrb3SyTBNI6-a5XGFEffII_bAc0qspjRxgO7OR1h9Lglz_uecAn4weKUGMilpiiw7HZC-7VN-C7sfgk1aTgOK40OkK9BTF5vKZAUOZHWbnQ6bHm1JasyjbGijTxggdkBAP800katYCXGdNvfY-4dPr_yk1jBMJQ-yPG6NDnMtg5Fh_6RM6tA5ZcXp9Cc2FQ_g8m6r450m3YaBWxYSBWw0BYsRUgfG3lvqv6YSxDQTfmUaTlIEhQ" target="_blank" rel="noopener noreferrer" className="view-link">View</a>
+                  </div>
+                </div>
+                <div className="award-item">
+                  <div className="award-icon">🥇</div>
+                  <div className="award-content">
+                    <h4>Young Software Engineering Coding Competition</h4>
+                    <p>UP Los Banos, 2021 · Champion</p>
+                    <a href="https://feualabang.edu.ph/features/feu-alabang-continues-to-charge-further-emerges-as-new-champions-in-local-coding-competition" target="_blank" rel="noopener noreferrer" className="view-link">View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="organizations-section">
+              <h3>Organizations</h3>
+              <div className="organizations-list">
+                <div className="award-item">
+                  <div className="award-icon">👥</div>
+                  <div className="award-content">
+                    <h4>Vice President · 2018 – 2020</h4>
+                    <p>Junior Philippine Computer Society</p>
+                  </div>
+                </div>
+                <div className="award-item">
+                  <div className="award-icon">🎨</div>
+                  <div className="award-content">
+                    <h4>Creatives Member · 2019 – 2020</h4>
+                    <p>Tertiary Honor Society</p>
+                  </div>
+                </div>
+                <div className="award-item">
+                  <div className="award-icon">💻</div>
+                  <div className="award-content">
+                    <h4>Member · 2018 – 2020</h4>
+                    <p>Association of Computing Machinery</p>
+                  </div>
+                </div>
+                <div className="award-item">
+                  <div className="award-icon">🔧</div>
+                  <div className="award-content">
+                    <h4>Member · 2019 – 2020</h4>
+                    <p>Google Developers Student Club</p>
                   </div>
                 </div>
               </div>
