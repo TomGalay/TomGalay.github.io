@@ -95,16 +95,14 @@ function App() {
 
           <div className="hero-stats">
             <div className="stat-item">
-              <span className="stat-number">6+</span>
+              <span className="stat-number">3+</span>
               <span className="stat-label">Years Experience</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">15+</span>
-              <span className="stat-label">Projects Completed</span>
+              <span className="stat-label" style={{fontSize: '1.2rem', fontWeight: '600'}}>Full Stack Expertise</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">10+</span>
-              <span className="stat-label">Technologies</span>
+              <span className="stat-label" style={{fontSize: '1.2rem', fontWeight: '600'}}>Cross-Platform Development</span>
             </div>
           </div>
 
