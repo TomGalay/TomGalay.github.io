@@ -389,16 +389,28 @@ function App() {
         <div className="container">
           <h2>Technical Skills</h2>
           <div className="skills-container">
-            <div className="skill-category-card frontend">
+            <div className="skill-category-card languages">
               <div className="category-header">
                 <div className="category-icon">&lt;&gt;</div>
-                <h3>Frontend Development</h3>
+                <h3>Languages & Markup</h3>
               </div>
               <div className="skills-list">
-                <span className="skill-tag">HTML5</span>
+                <span className="skill-tag">HTML</span>
                 <span className="skill-tag">CSS</span>
-                <span className="skill-tag">Javascript</span>
+                <span className="skill-tag">JS</span>
                 <span className="skill-tag">PHP</span>
+                <span className="skill-tag">Sass</span>
+              </div>
+            </div>
+
+            <div className="skill-category-card frontend">
+              <div className="category-header">
+                <div className="category-icon">◇</div>
+                <h3>Frontend Frameworks</h3>
+              </div>
+              <div className="skills-list">
+                <span className="skill-tag">Vue</span>
+                <span className="skill-tag">Tailwind</span>
                 <span className="skill-tag">Bootstrap</span>
               </div>
             </div>
@@ -406,15 +418,22 @@ function App() {
             <div className="skill-category-card backend">
               <div className="category-header">
                 <div className="category-icon">⚙</div>
-                <h3>Backend & Databases</h3>
+                <h3>Backend & CMS</h3>
               </div>
               <div className="skills-list">
-                <span className="skill-tag">PHP</span>
                 <span className="skill-tag">WordPress</span>
-                <span className="skill-tag">MySQL</span>
+                <span className="skill-tag">Laravel</span>
                 <span className="skill-tag">REST APIs</span>
-                <span className="skill-tag">Firebase</span>
-                <span className="skill-tag">Authentication</span>
+              </div>
+            </div>
+
+            <div className="skill-category-card database">
+              <div className="category-header">
+                <div className="category-icon">▬</div>
+                <h3>Databases</h3>
+              </div>
+              <div className="skills-list">
+                <span className="skill-tag">MySQL</span>
               </div>
             </div>
 
@@ -425,33 +444,18 @@ function App() {
               </div>
               <div className="skills-list">
                 <span className="skill-tag">Flutter</span>
-                <span className="skill-tag">Cross-Platform</span>
-                <span className="skill-tag">Mobile UI/UX</span>
-                <span className="skill-tag">Performance Optimization</span>
               </div>
             </div>
 
             <div className="skill-category-card cloud">
               <div className="category-header">
                 <div className="category-icon">▲</div>
-                <h3>Cloud & Infrastructure</h3>
+                <h3>Cloud & Services</h3>
               </div>
               <div className="skills-list">
                 <span className="skill-tag">AWS</span>
                 <span className="skill-tag">GCP</span>
-              </div>
-            </div>
-
-            <div className="skill-category-card tools">
-              <div className="category-header">
-                <div className="category-icon">◆</div>
-                <h3>Tools & Builders</h3>
-              </div>
-              <div className="skills-list">
-                <span className="skill-tag">Elementor</span>
-                <span className="skill-tag">Bricks</span>
-                <span className="skill-tag">Divi</span>
-                <span className="skill-tag">API Integration</span>
+                <span className="skill-tag">Google Apps</span>
               </div>
             </div>
           </div>
