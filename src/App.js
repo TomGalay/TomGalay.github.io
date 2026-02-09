@@ -231,7 +231,6 @@ function App() {
                 <ul>
                   <li>Created responsive web pages for WordPress websites using Elementor and Bricks</li>
                   <li>Translated Figma designs into functional web pages</li>
-                  <li>Utilized Jetpack for custom post types and dynamic content</li>
                 </ul>
               </div>
             </div>
@@ -243,12 +242,15 @@ function App() {
       <section id="skills" className="skills">
         <div className="container">
           <h2>Technical Skills</h2>
-          <div className="skills-grid">
-            <div className="skill-category">
-              <h3>Frontend</h3>
+          <div className="skills-container">
+            <div className="skill-category-card frontend">
+              <div className="category-header">
+                <div className="category-icon">&lt;&gt;</div>
+                <h3>Frontend Development</h3>
+              </div>
               <div className="skills-list">
-                <span className="skill-tag">HTML</span>
-                <span className="skill-tag">CSS</span>
+                <span className="skill-tag">HTML5</span>
+                <span className="skill-tag">CSS3</span>
                 <span className="skill-tag">JavaScript</span>
                 <span className="skill-tag">Vue.js</span>
                 <span className="skill-tag">Bootstrap</span>
@@ -256,8 +258,11 @@ function App() {
               </div>
             </div>
 
-            <div className="skill-category">
-              <h3>Backend & Databases</h3>
+            <div className="skill-category-card backend">
+              <div className="category-header">
+                <div className="category-icon">⚙</div>
+                <h3>Backend & Databases</h3>
+              </div>
               <div className="skills-list">
                 <span className="skill-tag">PHP</span>
                 <span className="skill-tag">WordPress</span>
@@ -268,44 +273,41 @@ function App() {
               </div>
             </div>
 
-            <div className="skill-category">
-              <h3>Mobile Development</h3>
+            <div className="skill-category-card mobile">
+              <div className="category-header">
+                <div className="category-icon">◻</div>
+                <h3>Mobile Development</h3>
+              </div>
               <div className="skills-list">
                 <span className="skill-tag">Flutter</span>
+                <span className="skill-tag">Cross-Platform</span>
                 <span className="skill-tag">Mobile UI/UX</span>
-                <span className="skill-tag">App Optimization</span>
+                <span className="skill-tag">Performance Optimization</span>
               </div>
             </div>
 
-            <div className="skill-category">
-              <h3>Cloud & DevOps</h3>
+            <div className="skill-category-card cloud">
+              <div className="category-header">
+                <div className="category-icon">▲</div>
+                <h3>Cloud & Infrastructure</h3>
+              </div>
               <div className="skills-list">
-                <span className="skill-tag">Google Cloud Platform</span>
                 <span className="skill-tag">AWS</span>
-                <span className="skill-tag">Azure</span>
                 <span className="skill-tag">Firebase</span>
               </div>
             </div>
 
-            <div className="skill-category">
-              <h3>Tools & Platforms</h3>
+            <div className="skill-category-card tools">
+              <div className="category-header">
+                <div className="category-icon">◆</div>
+                <h3>Tools & Builders</h3>
+              </div>
               <div className="skills-list">
                 <span className="skill-tag">Elementor</span>
                 <span className="skill-tag">Bricks</span>
                 <span className="skill-tag">Divi</span>
-                <span className="skill-tag">Jetpack</span>
-                <span className="skill-tag">cPanel</span>
                 <span className="skill-tag">API Integration</span>
-              </div>
-            </div>
-
-            <div className="skill-category">
-              <h3>Google Services</h3>
-              <div className="skills-list">
-                <span className="skill-tag">Google Sheets</span>
-                <span className="skill-tag">Google Maps</span>
-                <span className="skill-tag">Google Drive</span>
-                <span className="skill-tag">Google Messaging</span>
+                <span className="skill-tag">cPanel</span>
               </div>
             </div>
           </div>
@@ -323,9 +325,9 @@ function App() {
               <p className="location">Muntinlupa, Philippines</p>
               <p className="date">2018 – 2022</p>
               <p className="highlight">Specialization: Web and Mobile Applications</p>
-              <p className="achievement">✓ Graduated Summa Cum Laude</p>
-              <p className="achievement">✓ Internal Vice President of Junior Philippine Computer Society (JPCS)</p>
-              <p className="achievement">✓ Active participant in programming competitions</p>
+              <p className="achievement">Graduated Summa Cum Laude</p>
+              <p className="achievement">Internal Vice President of Junior Philippine Computer Society (JPCS)</p>
+              <p className="achievement">Active participant in programming competitions</p>
             </div>
 
             <div className="awards-section">
