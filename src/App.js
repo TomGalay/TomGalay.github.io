@@ -275,9 +275,14 @@ function App() {
               <div className="project-image">
                 <img src="/projects/Chronicles.webp" alt="Chronicles of Elijah" />
                 <div className="project-overlay">
-                  <a href="https://github.com/TomGalay/Chronicles-of-Elijah" target="_blank" rel="noopener noreferrer" className="project-link">
-                    View Code
-                  </a>
+                  <div className="project-links">
+                    <a href="/chronicles-of-elijah/StartUp.html" target="_blank" rel="noopener noreferrer" className="project-link">
+                      Play Game
+                    </a>
+                    <a href="https://github.com/TomGalay/Chronicles-of-Elijah" target="_blank" rel="noopener noreferrer" className="project-link">
+                      View Code
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="project-content">
