@@ -46,6 +46,7 @@ function App() {
             <li><a href="#home" onClick={() => scrollToSection('home')} className={activeNav === 'home' ? 'active' : ''}>Home</a></li>
             <li><a href="#about" onClick={() => scrollToSection('about')} className={activeNav === 'about' ? 'active' : ''}>About</a></li>
             <li><a href="#experience" onClick={() => scrollToSection('experience')} className={activeNav === 'experience' ? 'active' : ''}>Experience</a></li>
+            <li><a href="#projects" onClick={() => scrollToSection('projects')} className={activeNav === 'projects' ? 'active' : ''}>Projects</a></li>
             <li><a href="#skills" onClick={() => scrollToSection('skills')} className={activeNav === 'skills' ? 'active' : ''}>Skills</a></li>
             <li><a href="#education" onClick={() => scrollToSection('education')} className={activeNav === 'education' ? 'active' : ''}>Education</a></li>
             <li><a href="#contact" onClick={() => scrollToSection('contact')} className={activeNav === 'contact' ? 'active' : ''}>Contact</a></li>
@@ -232,6 +233,149 @@ function App() {
                   <li>Created responsive web pages for WordPress websites using Elementor and Bricks</li>
                   <li>Translated Figma designs into functional web pages</li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="projects">
+        <div className="container">
+          <h2>Projects & Showcases</h2>
+          <p className="section-subtitle">My works created on personal time or for academic purposes</p>
+
+          <div className="projects-grid featured">
+            {/* Featured Projects */}
+            <div className="project-card featured-project">
+              <div className="project-image">
+                <img src="/projects/CryptSim.webp" alt="CryptSim" />
+                <div className="project-overlay">
+                  <a href="https://www.youtube.com/watch?v=FqipOo7wO6k" target="_blank" rel="noopener noreferrer" className="project-link">
+                    View Demo
+                  </a>
+                </div>
+              </div>
+              <div className="project-content">
+                <h3>CryptSim</h3>
+                <p className="project-description">
+                  An advanced cryptocurrency trading simulator for mobile devices. Our Capstone Project; Won Best Research in Eureka 2022. I mainly developed the login/registration and profiles but also helped on the trading, transaction, and backtesting modules with Kotlin. I managed the mySQL database hosted in Azure. I created APIs to connect the cloud database and mobile application/admin website using nodeJS in Microsoft Serverless Functions.
+                </p>
+                <div className="project-tags">
+                  <span className="tag">Android</span>
+                  <span className="tag">Kotlin</span>
+                  <span className="tag">nodeJS</span>
+                  <span className="tag">Azure</span>
+                  <span className="tag">mySQL</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="project-card featured-project">
+              <div className="project-image">
+                <img src="/projects/Chronicles.webp" alt="Chronicles of Elijah" />
+                <div className="project-overlay">
+                  <a href="https://github.com/TomGalay/Chronicles-of-Elijah" target="_blank" rel="noopener noreferrer" className="project-link">
+                    View Code
+                  </a>
+                </div>
+              </div>
+              <div className="project-content">
+                <h3>Chronicles of Elijah</h3>
+                <p className="project-description">
+                  I created a turn-based RPG game with three levels and with random monster encounters with a boss monster for each level. I used classes to create and control the user and enemy entities with their levels and attributes. Functions were used for most of the mechanics of the game as well as the animations and audio. XP gain, XP requirements, and gold gain are scaled using a custom formula.
+                </p>
+                <div className="project-tags">
+                  <span className="tag">HTML</span>
+                  <span className="tag">CSS</span>
+                  <span className="tag">JS</span>
+                  <span className="tag">jQuery</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="project-card featured-project">
+              <div className="project-image">
+                <img src="/projects/Vapour.webp" alt="Vapour" />
+                <div className="project-overlay">
+                  <a href="https://github.com/TomGalay/Vapour" target="_blank" rel="noopener noreferrer" className="project-link">
+                    View Code
+                  </a>
+                </div>
+              </div>
+              <div className="project-content">
+                <h3>Vapour.</h3>
+                <p className="project-description">
+                  I created a video game digital distribution platform in a Web Development subject. On frontend development, I helped in creating the market, library, and purchase modules. For the backend, I helped in developing the login/registration, purchase/add to library process, and error validations
+                </p>
+                <div className="project-tags">
+                  <span className="tag">HTML</span>
+                  <span className="tag">CSS</span>
+                  <span className="tag">PHP</span>
+                  <span className="tag">mySQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="other-projects">
+            <h3>Other Learning Projects</h3>
+            <p className="projects-subtitle">Additional projects I've created for learning and skill development</p>
+            
+            <div className="projects-grid other">
+              <div className="project-card other-project">
+                <div className="project-image">
+                  <img src="/projects/Portfolio-first.webp" alt="Portfolio V1" />
+                  <div className="project-overlay">
+                    <div className="project-links">
+                      <a href="https://github.com/TomGalay/TomGalay.github.io" target="_blank" rel="noopener noreferrer" className="project-link">Github</a>
+                      <a href="https://isaiahgalay.github.io/" target="_blank" rel="noopener noreferrer" className="project-link">View</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="project-content">
+                  <h4>Portfolio</h4>
+                  <p>My first portfolio created with HTML, CSS, and JS for animations.</p>
+                  <div className="project-tags">
+                    <span className="tag small">HTML</span>
+                    <span className="tag small">CSS</span>
+                    <span className="tag small">JS</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="project-card other-project">
+                <div className="project-image">
+                  <img src="/projects/Laragigs.webp" alt="Laragigs" />
+                  <div className="project-overlay">
+                    <a href="https://github.com/TomGalay/Laragigs" target="_blank" rel="noopener noreferrer" className="project-link">Github</a>
+                  </div>
+                </div>
+                <div className="project-content">
+                  <h4>Laragigs</h4>
+                  <p>Job listing platform with login, registration, and CRUD functions for job listings, category filters.</p>
+                  <div className="project-tags">
+                    <span className="tag small">Laravel</span>
+                    <span className="tag small">PHP</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="project-card other-project">
+                <div className="project-image">
+                  <img src="/projects/WordPress-Demo.webp" alt="WordPress Demo" />
+                  <div className="project-overlay">
+                    <a href="https://github.com/TomGalay/wordpress-demo" target="_blank" rel="noopener noreferrer" className="project-link">Github</a>
+                  </div>
+                </div>
+                <div className="project-content">
+                  <h4>WordPress Demo</h4>
+                  <p>WordPress site with custom plugin and themes. Features registration with profiles and admin dashboard.</p>
+                  <div className="project-tags">
+                    <span className="tag small">WordPress</span>
+                    <span className="tag small">PHP</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
