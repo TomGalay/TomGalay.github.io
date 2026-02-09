@@ -1,53 +1,76 @@
-# Getting Started with Create React App
+# Tom Galay's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal website and project portfolio. This site hosts my various projects and interactive applications built with React.
 
-## Available Scripts
+## 🎮 Projects
 
-In the project directory, you can run:
+- **Chronicles of Elijah** - An interactive game featuring character sprites, audio, and gameplay mechanics
+- **Additional Projects** - See the projects folder for more
 
-### `npm start`
+Visit the live site: https://tomgalay.github.io/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Setup & Development
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
+- Node.js and npm installed
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
 
-### `npm run build`
+### Development
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Runs the app in development mode at [http://localhost:3000](http://localhost:3000).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Build
 
-### `npm run eject`
+```bash
+npm run build
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Creates an optimized production build in the `build` folder.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Deploy to GitHub Pages
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run deploy
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This command builds the project and deploys it to the `gh-pages` branch, making it live at https://tomgalay.github.io/
 
-## Learn More
+**Alternative (if needed):**
+```bash
+npx gh-pages -d build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This deploys the `build` folder directly to the `gh-pages` branch.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📁 Project Structure
 
-### Code Splitting
+```
+public/          - Static assets and HTML files
+├── chronicles-of-elijah/  - Game assets and HTML
+src/            - React source code
+chronicles-of-elijah/ - Game files and documentation
+projects/       - Project folder
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🚀 Built With
+
+- [React](https://reactjs.org/)
+- [Create React App](https://create-react-app.dev/)
+- [Bootstrap](https://getbootstrap.com/)
+- [jQuery](https://jquery.com/)
+
+## 📝 License
+
+This project is open source and available under the MIT License.
 
 ### Analyzing the Bundle Size
 

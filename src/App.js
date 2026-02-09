@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 
 function App() {
   const [activeNav, setActiveNav] = useState('home');
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     // Scroll animation observer
@@ -32,6 +33,7 @@ function App() {
 
   const scrollToSection = (id) => {
     setActiveNav(id);
+    setMenuOpen(false);
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -42,7 +44,12 @@ function App() {
       <nav className="navbar">
         <div className="nav-container">
           <div className="logo">Isaiah Thomas Galay</div>
-          <ul className="nav-menu">
+          <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
             <li><a href="#home" onClick={() => scrollToSection('home')} className={activeNav === 'home' ? 'active' : ''}>Home</a></li>
             <li><a href="#about" onClick={() => scrollToSection('about')} className={activeNav === 'about' ? 'active' : ''}>About</a></li>
             <li><a href="#experience" onClick={() => scrollToSection('experience')} className={activeNav === 'experience' ? 'active' : ''}>Experience</a></li>
@@ -87,12 +94,12 @@ function App() {
             <span className="title-highlight">Galay</span>
           </h1>
           
-          <p className="hero-subtitle">Full Stack Developer | Mobile & Web Specialist</p>
+          <p className="hero-subtitle">Full Stack Developer | Web and Mobile Developer</p>
           
           <p className="hero-description">
-            Transforming ideas into elegant digital solutions. Specializing in scalable web applications, 
-            modern mobile development, and enterprise solutions.
-          </p>
+            Are you looking to streamline your processes? Automate your work functions? Modernize your business through web development with excellent quality and reliability?
+			Let's connect and take your digital footprint to the next level!
+		  </p>
 
           <div className="hero-stats">
             <div className="stat-item">
@@ -146,14 +153,8 @@ function App() {
           <h2>About Me</h2>
           <div className="about-content">
             <p>
-              I'm a passionate full-stack developer with expertise in mobile app development, WordPress, and web technologies. 
-              With experience working on enterprise-level projects for Australian NDIS organizations and international clients, 
-              I bring a blend of technical excellence and problem-solving skills.
-            </p>
-            <p>
-              Currently focused on modernizing Flutter applications while maintaining a strong foundation in WordPress development. 
-              I excel at building scalable solutions that integrate multiple technologies and platforms, from REST APIs to cloud services.
-            </p>
+              I'm a passionate full stack developer with expertise in WordPress with a focus on custom PHP and javascript solutions and mobile development with Flutter. 
+			</p>
           </div>
         </div>
       </section>
@@ -170,10 +171,9 @@ function App() {
                 <p className="company">Mycarehub · Remote</p>
                 <p className="date">Nov 2025 – Present</p>
                 <ul>
-                  <li>Remade Flutter mobile app from ground up to modernize and improve performance</li>
+                  <li>Remade the flutter mobile app almost from scratch to modernize, improve performance, and add make it more compatible with the web</li>
                   <li>Implemented features: bookings, reports management, and document viewing</li>
                   <li>Integrated Firebase for user authentication and REST APIs for data handling</li>
-                  <li>Enhanced web compatibility and platform support</li>
                 </ul>
               </div>
             </div>
@@ -185,11 +185,11 @@ function App() {
                 <p className="company">Mycarehub · Remote</p>
                 <p className="date">Nov 2023 – Present</p>
                 <ul>
-                  <li>Developed core business processes for Australian NDIS Organization</li>
+                  <li>Developed core business processes for an Australian NDIS Organization</li>
                   <li>Built multi-step, multi-form intake system integrated with Firebase and Google products</li>
                   <li>Implemented REST APIs, authentication, validation, rate limiting, and caching</li>
-                  <li>Created dashboards for user management, incident reports, and support plans</li>
-                  <li>Features: PDF generation, booking system, SMTP, push notifications, SEO</li>
+                  <li>Created multiple dashboards for managing users, reports for incidents/complaints/feedback, and other crucial information such as support plans</li>
+                  <li>Other features: automated PDF generation for documents, booking system, SMTP and emails for announcements and automated reminders, SEO, push notifications for mobile</li>
                 </ul>
               </div>
             </div>
@@ -202,8 +202,7 @@ function App() {
                 <p className="date">May 2023 – Aug 2023</p>
                 <ul>
                   <li>Developed matrix-based multilevel marketing system with e-commerce storefront</li>
-                  <li>Implemented modules: login/registration, dashboards, store management, payments</li>
-                  <li>Integrated email notifications and matrix management features</li>
+                  <li>Implemented modules: user and membership management, store management, product and inventory management, matrix management, payments, and PayMongo integration</li>
                 </ul>
               </div>
             </div>
@@ -215,10 +214,8 @@ function App() {
                 <p className="company">Freelance · Remote</p>
                 <p className="date">Mar 2023 – Apr 2023</p>
                 <ul>
-                  <li>Developed website for International Ophthalmologist symposium</li>
-                  <li>Created: login/registration, doctor verification, email notifications</li>
-                  <li>Implemented: certificate generator, evaluation forms, admin dashboards</li>
-                  <li>Managed website maintenance and hosting via cPanel</li>
+                  <li>Deployed a website for an international Ophthalmologist conference/symposium of more than 2500 registrants</li>
+                  <li>Created systems for login and registration, profile and account management, PayPal and PayMongo integration, abstract submission and management, admin dashboards, and email notifications</li>
                 </ul>
               </div>
             </div>
@@ -399,11 +396,10 @@ function App() {
               </div>
               <div className="skills-list">
                 <span className="skill-tag">HTML5</span>
-                <span className="skill-tag">CSS3</span>
-                <span className="skill-tag">JavaScript</span>
-                <span className="skill-tag">Vue.js</span>
+                <span className="skill-tag">CSS</span>
+                <span className="skill-tag">Javascript</span>
+                <span className="skill-tag">PHP</span>
                 <span className="skill-tag">Bootstrap</span>
-                <span className="skill-tag">Responsive Design</span>
               </div>
             </div>
 
@@ -442,7 +438,7 @@ function App() {
               </div>
               <div className="skills-list">
                 <span className="skill-tag">AWS</span>
-                <span className="skill-tag">Firebase</span>
+                <span className="skill-tag">GCP</span>
               </div>
             </div>
 
@@ -456,7 +452,6 @@ function App() {
                 <span className="skill-tag">Bricks</span>
                 <span className="skill-tag">Divi</span>
                 <span className="skill-tag">API Integration</span>
-                <span className="skill-tag">cPanel</span>
               </div>
             </div>
           </div>
@@ -531,7 +526,7 @@ function App() {
 
       {/* Footer */}
       <footer className="footer">
-        <p>&copy; 2026 Isaiah Thomas Galay. All rights reserved. | Full Stack Developer | Mobile & Web Specialist</p>
+        <p>&copy; 2026 Isaiah Thomas Galay. All rights reserved. | WordPress | Web and Mobile Developer</p>
       </footer>
     </div>
   );
