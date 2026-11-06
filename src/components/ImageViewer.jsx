@@ -38,6 +38,6 @@ export default function ImageViewer({ project, active, onChange, onClose, opener
     }} onTouchCancel={() => { touchStart.current = null; }}>
       <img src={image.src} alt={image.alt} width={image.width} height={image.height} />
     </div>
-    <footer className="viewer-footer"><div className="viewer-navigation"><button type="button" onClick={() => navigate(-1)} aria-label={UI.previousImage}><Arrow className="arrow-previous" /></button><p aria-live="polite" aria-atomic="true">{image.label || image.alt}<span>{UI.selectedScreen(active + 1, project.media.length)}</span></p><button type="button" onClick={() => navigate(1)} aria-label={UI.nextImage}><Arrow /></button></div><p className="viewer-help">{UI.viewerHelp}</p></footer>
+    <footer className="viewer-footer"><div className="viewer-navigation"><button type="button" onClick={() => navigate(-1)} aria-label={UI.previousImage}><Arrow className="arrow-previous" /></button><p aria-live="polite" aria-atomic="true">{image.label || image.alt}<span>{UI.selectedScreen(active + 1, project.media.length)}</span></p><button type="button" onClick={() => navigate(1)} aria-label={UI.nextImage}><Arrow /></button></div></footer>
   </dialog>, document.body);
 }

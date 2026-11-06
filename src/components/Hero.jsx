@@ -21,6 +21,6 @@ export default function Hero() {
       </a>
       <Star className="hero-small-star" />
     </div>
-    <div className="hero-bottom"><span>{PROFILE.location}</span><a className="text-link" href="#work">{UI.explore}<Arrow className="arrow-down" /></a></div>
+    <div className="hero-bottom"><span>{PROFILE.location}</span></div>
   </section>;
 }
