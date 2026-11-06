@@ -6,7 +6,7 @@ export default function Navigation() {
     <a className="skip-link" href="#main">{UI.skip}</a>
     <header className="navigation container">
       <a href="#top" className="wordmark" aria-label={UI.home}>ig<span>.</span></a>
-      <nav aria-label={UI.navigation}>{NAVIGATION.map(({ id, label }) => <a key={id} href={`#${id}`}>{label}{id === "contact" && <Arrow diagonal />}</a>)}</nav>
+      <nav aria-label={UI.navigation}>{NAVIGATION.map(({ id, href, label }) => <a key={id || href} href={href || `#${id}`} target={href ? "_blank" : undefined} rel={href ? "noreferrer" : undefined}>{label}{href && <Arrow diagonal />}</a>)}</nav>
       <a className="nav-email" href={`mailto:${PROFILE.email}`}>{PROFILE.email}<Arrow diagonal /></a>
     </header>
   </>;

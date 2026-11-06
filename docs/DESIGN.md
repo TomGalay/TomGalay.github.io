@@ -12,15 +12,15 @@ The blueprint’s grid, document numbers, drafting labels, stamps, coordinate cu
 
 - Compact header: Isaiah Galay, Work, About, Contact. Plain text links.
 - One semantic h1: Isaiah Galay. A prominent supporting line: “Web & mobile developer.”
-- Pair the type with an actual mobile app screen and web screenshot. Each preview links to its corresponding project below. These are different projects; do not imply they are responsive versions of the same product.
+- Pair the type with an actual mobile app screen and web screenshot. Each preview links to its corresponding project below. Both hero previews now feature Mycarehub: its public website and its separate Flutter worker app.
 - Let the next section appear naturally. Do not force the introduction to fill the viewport.
 - No introductory essay, availability badge, decorative preheading, or repeated subtitle.
 
 ## Page rhythm
 
-Follow the opening with large project articles. Use a two-column text/media composition for one and a broad web canvas for the other. Vary proportions rather than repeating identical cards. Keep titles, contribution, and destination links close to the relevant media.
+Lead Work with a full-width Mycarehub feature: large title, concise contribution, three destination links, and side-by-side public web / worker-app galleries. Stack these galleries on small screens. Follow with the other project articles. Use a two-column text/media composition for one and a broad web canvas for the other. Vary proportions rather than repeating identical cards. Keep titles, contribution, and destination links close to the relevant media.
 
-“Work”, “About”, and “Contact” are sufficient headings. Do not automatically add a paragraph beneath each. Education and selected credentials belong within About.
+“Work”, “About”, and “Contact” are sufficient headings. Do not automatically add a paragraph beneath each. Education remains in an optional disclosure. All seven certifications are displayed openly in About as linked rows with issuer and issue date.
 
 ## Starting tokens
 

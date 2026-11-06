@@ -4,7 +4,7 @@
 
 The previous portfolio was moved to `TomGalay/TomGalay.github.io.3.0`. Archive changes were committed and pushed as `1575572e`; its versioned site and a project screenshot were verified during that migration.
 
-This project is a separate documentation starter for the new portfolio, using local folder `Portfolio-Next` and repository `TomGalay/TomGalay.github.io`. Application implementation and Pages deployment are still pending.
+The React portfolio uses local folder `Portfolio-Next` and public repository `TomGalay/TomGalay.github.io`. GitHub Pages uses the supplied Actions workflow. The owner confirmed the retry of the first deployment worked.
 
 ## Repository setup
 
@@ -14,7 +14,7 @@ This project is a separate documentation starter for the new portfolio, using lo
 4. Obtain selected facts and media from the archive. Do not copy its Git metadata, `node_modules`, `dist`, or blueprint design instructions.
 5. Configure the replacement’s base as `/`. Leave the archive’s base as `/TomGalay.github.io.3.0/`.
 
-Renaming the old repository did not automatically create the new one. The root site remains a future release until the replacement application is implemented and deployed.
+Renaming the old repository did not automatically create the new one. The replacement repository has since been created independently and serves the root site.
 
 ## Deployment
 

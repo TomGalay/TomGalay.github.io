@@ -26,3 +26,15 @@ Reduced-motion and coarse-pointer fallbacks were reviewed in code; OS-level redu
 The GitHub root repository is public and was cloned successfully. The first cloud environment could not authenticate a GitHub push. The source was subsequently recovered to the Mac for deployment through its authenticated GitHub Desktop checkout. A private review deployment is separate from GitHub Pages. The `.3.0` archive was read as a source only and was not modified.
 
 The supplied GitHub Pages workflow builds and deploys pushes to `main` after GitHub Actions is selected as the Pages source. Verify the workflow result and public root URL for each release. A private review URL is not evidence that `tomgalay.github.io` has been updated.
+
+## Mycarehub update — 7 November 2026 (Asia/Manila)
+
+- Production build passed: 87.85 kB JS gzip and 4.95 kB CSS gzip.
+- Mycarehub leads the hero and Work; its public web and worker app galleries maintain independent selection and live screen labels.
+- Web selection changed to Services; mobile selection changed to Travel and Shift report with selected button state and matching media.
+- All seven archive certification records render outside a disclosure, preserving their issuer, issue date, and verification destination.
+- Existing résumé PDF inspected as a valid two-page document; header and Contact offer view access and Contact also provides a same-origin download action.
+- Layouts at 320px, 360px, 768px, and 1440px showed no horizontal document overflow.
+- Website destination uses `mycarehub.com.au`; source capture hostname is confined to documentation. Official iOS and Android listing destinations were verified.
+
+- The View résumé action opened the served PDF in a separate browser tab.

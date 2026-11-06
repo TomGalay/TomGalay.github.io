@@ -37,7 +37,7 @@ src/
     Footer.jsx
 ```
 
-App composes the page. Work orders projects. ProjectShowcase, defined within Work.jsx, renders one semantic article. ProjectGallery owns only its selected image index. Native `details`/`summary` provides optional project/experience detail. Use inline galleries initially rather than a modal viewer.
+App composes the page. Work orders projects. ProjectShowcase, defined within Work.jsx, renders one semantic article. ProjectGallery owns only its selected image index. `FEATURED_PROJECT` supplies Mycarehub metadata and independent web/mobile media records; Work renders this full-width before `PROJECTS`. Hero reads the same featured record rather than relying on project array positions. Native `details`/`summary` provides optional project/experience detail. Use inline galleries initially rather than a modal viewer.
 
 Keep one global stylesheet initially, ordered as tokens, base, layout, component classes, responsive rules, reduced-motion fallbacks. Clearly name component classes; avoid global selectors that accidentally change unrelated sections. Extract modules only when a maintenance issue justifies it.
 
@@ -47,11 +47,12 @@ Keep one global stylesheet initially, ordered as tokens, base, layout, component
 | --- | --- |
 | `PROFILE` | Display name, role, email, location, public profile links; optional verified résumé/availability |
 | `NAVIGATION` | Stable section ID and visible label |
+| `FEATURED_PROJECT` | Mycarehub contribution, three destination links, and independent public web / worker app galleries |
 | `PROJECTS` | Stable ID, title, year, actual platform, contribution, summary, media, links, optional detail points, featured state |
 | `EXPERIENCE` | Stable ID, company, role, start/end month, short contribution, optional detail |
 | `SKILL_GROUPS` | Stable ID, group name, item names; no proficiency values |
 | `EDUCATION` | Institution, qualification, period, honors |
-| `CREDENTIALS` | Name, issuer, issue date, verification URL, selected state |
+| `CREDENTIALS` | Name, issuer, issue date, verification URL; all records render openly |
 
 Media includes path, alt text, intrinsic width, and height. Links include a visible label and real URL. Missing optional content omits its action or section. Define section IDs once and reuse them for navigation and anchors.
 

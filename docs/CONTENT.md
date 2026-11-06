@@ -11,7 +11,7 @@ Copy and audit source records when the archive is available. Employment records 
 | Area | Content | Initial budget |
 | --- | --- | --- |
 | Introduction | Name, direct role line, project previews, navigation | No prose paragraph |
-| Work | New Life Sta Rosa and WinLi Home | 20–35 words of visible summary per project |
+| Work | Mycarehub first; New Life Sta Rosa and WinLi Home follow | 20–35 words of visible summary per project |
 | Project detail | Contribution, relevant implementation, links | Up to three concise factual points, expandable inline |
 | About | Short introduction, grouped experience, unrated skills, education | About paragraph around 40–60 words |
 | Contact | Email, LinkedIn, GitHub | No form or explanatory paragraph |
@@ -25,7 +25,7 @@ Budgets guide editing; preserve necessary credit and useful alt text. Essential 
 | --- | --- | --- |
 | New Life Sta Rosa | Six mobile screens, 2026 date, App Store URL, team-work description covering mobile app and CMS | Lead mobile showcase. Credit team involvement; do not claim sole ownership of all layers |
 | WinLi Home | Three web screenshots, logo, live URL, 2024 date, design/development/branding description | Lead web showcase with a broad media canvas |
-| Mycarehub | Detailed mobile, WordPress systems, and AWS experience; no matching screenshots in the inspected repo | Strong evidence in About. Feature only when media, public destinations, and contribution wording are ready |
+| Mycarehub | Detailed mobile, WordPress systems, and AWS experience; 17 public web captures and eight owner-supplied worker app screens | Lead hero and Work. Show public website pages only; link website, iOS, and Android |
 | CryptSim | Composite image, demo link, capstone/research-award context | Optional selected earlier work |
 | Chronicles of Elijah / Vapour | Composite images and source links | Optional later archive; omit initially if they dilute the main work |
 
@@ -45,7 +45,7 @@ Draft summaries to verify during implementation:
 | Certification logos | Copy only if selected; avoid a logo wall |
 | `public/favicon.svg` | Replace with a simple identity consistent with the new design |
 
-Inspect dimensions before deciding crops. Keep originals while generating smaller display assets. Do not fabricate product screens to fill missing media. No current résumé download exists in the inspected asset set.
+Inspect dimensions before deciding crops. Keep originals while generating smaller display assets. Do not fabricate product screens to fill missing media. The existing `GALAY_CV_7-26.pdf` was recovered from the owner’s supplied résumé. Serve it unchanged as `public/resume/Isaiah-Galay-Resume.pdf`.
 
 ## Background
 
@@ -59,5 +59,15 @@ Keep skills grouped and unrated. Only add a technology when actual work or expli
 - Verify the App Store and WinLi Home links. The previous Play Store link was `#`; omit it until a real destination exists.
 - Resolve “Portfolio V1” links before reuse. Its former root repository link redirects to the blueprint edition and does not establish the first portfolio’s identity.
 - Keep study period and honors date separate; the archive lists 2018–2022 study and a 2023 honors entry.
-- Do not show a résumé download until a real current file is available.
+- View and download links serve the verified two-page résumé PDF. Replace the asset when the owner supplies a newer version.
 - Do not ship placeholder links, “soon” buttons, or undocumented professional claims.
+
+## Mycarehub source and destination rules
+
+- Website source: the new public design at `https://test.mycarehub.com.au/`. Attribute and link the work to `https://mycarehub.com.au/` per owner instruction. Do not present the test hostname in public copy.
+- Active web gallery: Home, Services, About, How we work, Contact. No logged-in web dashboards or operational screens are shown.
+- Mobile source: `Mycarehub-Flutter-Mobile-App/screenshots/01_login.png` through `08_shift_report_report.png`, explicitly supplied for the worker app showcase. Preserve their interface content; `_current.png` is excluded.
+- Eight mobile WebP assets retain the complete screen. The initial view is Schedule.
+- iOS: `https://apps.apple.com/au/app/mycarehub/id6450425879`.
+- Android: `https://play.google.com/store/apps/details?id=au.com.mycarehub`.
+- All seven credentials are copied from the archive’s certification records, with issuer, issue date, and original verification destinations. Do not describe them as currently active when validity is unverified.

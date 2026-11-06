@@ -11,6 +11,7 @@ export const PROFILE = {
   github: "https://github.com/TomGalay",
   linkedin: "https://www.linkedin.com/in/isaiah-thomas-galay-376990175/",
   archive: "https://tomgalay.github.io/TomGalay.github.io.3.0/",
+  resume: asset("resume/Isaiah-Galay-Resume.pdf"),
   about: "I’m a developer with a creative eye. I build websites, mobile apps, and the systems that keep them running—from an idea on a screen to something people can actually use.",
   statement: ["A developer.", "A creative.", "A bit of both."],
 };
@@ -19,6 +20,7 @@ export const NAVIGATION = [
   { id: "work", label: "Work" },
   { id: "about", label: "About" },
   { id: "contact", label: "Contact" },
+  { href: PROFILE.resume, label: "Résumé" },
 ];
 
 export const UI = {
@@ -26,12 +28,16 @@ export const UI = {
   navigation: "Main navigation",
   home: "Isaiah Galay — back to top",
   explore: "Explore my work",
-  heroMobile: "Explore New Life Sta Rosa, a mobile app project",
-  heroWeb: "Explore WinLi Home, a web project",
+  heroMobile: "Explore the Mycarehub worker app",
+  heroWeb: "Explore the Mycarehub public website",
   work: "Work",
   about: "About",
   contribution: "My contribution",
-  background: "Education & credentials",
+  background: "Education",
+  certifications: "Certifications",
+  resume: "View résumé",
+  downloadResume: "Download PDF",
+  resumeFilename: "Isaiah-Galay-Resume.pdf",
   experience: "Experience",
   selectedScreen: (active, total) => `Screen ${active} of ${total}`,
   viewScreen: (name, active) => `View ${name} screenshot ${active}`,
@@ -125,6 +131,51 @@ export const EDUCATION = {
 };
 
 export const CREDENTIALS = [
-  { name: "Microsoft Azure Fundamentals", href: "https://www.credly.com/badges/f87d5260-f8a6-4cbb-accd-b3c475132585" },
-  { name: "Cisco DevNet Associate", href: "https://www.credly.com/earner/earned/badge/5c988029-642f-4e08-a418-b988bcfa98ce" },
+  { name: "CCNA: Enterprise Networking, Security, and Automation", issuer: "Cisco", issued: "Apr 2022", href: "https://www.credly.com/badges/346daed0-c0a0-467d-a068-2ef679bab10e?source=linked_in_profile" },
+  { name: "IT Specialist: Java", issuer: "Certiport", issued: "Mar 2022", href: "https://www.credly.com/earner/earned/badge/fc06984a-d61a-4622-a4ff-66e8c3061ab5" },
+  { name: "DevNet Associate", issuer: "Cisco", issued: "Aug 2021", href: "https://www.credly.com/earner/earned/badge/5c988029-642f-4e08-a418-b988bcfa98ce" },
+  { name: "CCNA: Switching, Routing, and Wireless Essentials", issuer: "Cisco", issued: "Jan 2022", href: "https://www.credly.com/earner/earned/badge/d2418596-c73e-423e-b738-decfe69f980b" },
+  { name: "Azure Fundamentals", issuer: "Microsoft", issued: "May 2021", href: "https://www.credly.com/badges/f87d5260-f8a6-4cbb-accd-b3c475132585" },
+  { name: "Microsoft 365 Fundamentals", issuer: "Microsoft", issued: "May 2021", href: "https://www.credly.com/badges/5c041b65-cad2-4071-abaf-92c64d764c4d" },
+  { name: "Database Administration Fundamentals", issuer: "Microsoft", issued: "Nov 2019", href: "https://www.credly.com/badges/c6e5da4b-09a2-4147-ae5d-3e4eb5987bfa/linked_in_profile" },
 ];
+
+export const FEATURED_PROJECT = {
+  id: "mycarehub",
+  name: "Mycarehub",
+  year: "2023 — present",
+  role: "Web & mobile development",
+  summary: "A public website that connects people with support, and a Flutter worker app for schedules, shift reports, and the work that happens in between.",
+  technologies: "WordPress · PHP · Flutter · Dart · AWS · Firebase",
+  detail: [
+    "Developed the website and supporting systems for intake, scheduling, reporting, and business operations.",
+    "Built the multiplatform mobile app for bookings, schedules, shift reports, and on-shift GPS tracking.",
+    "Maintain the AWS infrastructure behind the service.",
+  ],
+  links: [
+    { label: "mycarehub.com.au", href: "https://mycarehub.com.au/" },
+    { label: "iOS app", href: "https://apps.apple.com/au/app/mycarehub/id6450425879" },
+    { label: "Android app", href: "https://play.google.com/store/apps/details?id=au.com.mycarehub" },
+  ],
+  web: {
+    id: "mycarehub-web",
+    name: "Mycarehub public website",
+    label: "Public website",
+    kind: "web",
+    initialImage: 0,
+    media: [
+      ["home", "Home"], ["services", "Services"], ["about", "About"], ["how-we-work", "How we work"], ["contact", "Contact"],
+    ].map(([file, label]) => ({src: asset(`projects/mycarehub/web/${file}.webp`), alt: `Mycarehub public website — ${label} page`, label, width:1280, height:720})),
+  },
+  mobile: {
+    id: "mycarehub-app",
+    name: "Mycarehub worker app",
+    label: "Worker app",
+    kind: "mobile",
+    initialImage: 1,
+    media: [
+      ["01_login", "Login"], ["02_schedule", "Schedule"], ["03_reports", "Reports"], ["04_profile", "Profile"],
+      ["05_shift_report_main", "Shift details"], ["06_shift_support", "Support notes"], ["07_shift_travel", "Travel"], ["08_shift_report_report", "Shift report"],
+    ].map(([file, label]) => ({src: asset(`projects/mycarehub/mobile/${file}.webp`), alt:`Mycarehub worker app — ${label} screen`, label, width:680, height:1478})),
+  },
+};

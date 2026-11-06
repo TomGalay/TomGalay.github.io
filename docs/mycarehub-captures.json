@@ -1,0 +1,92 @@
+{
+  "project": "Mycarehub",
+  "attribution": "https://mycarehub.com.au/",
+  "captureSource": "https://test.mycarehub.com.au/",
+  "pages": [
+    {
+      "name": "home",
+      "source": "https://test.mycarehub.com.au/",
+      "canonical": "https://mycarehub.com.au/"
+    },
+    {
+      "name": "services",
+      "source": "https://test.mycarehub.com.au/services/",
+      "canonical": "https://mycarehub.com.au/services/"
+    },
+    {
+      "name": "how-we-work",
+      "source": "https://test.mycarehub.com.au/how-we-work/",
+      "canonical": "https://mycarehub.com.au/how-we-work/"
+    },
+    {
+      "name": "about",
+      "source": "https://test.mycarehub.com.au/about/",
+      "canonical": "https://mycarehub.com.au/about/"
+    },
+    {
+      "name": "contact",
+      "source": "https://test.mycarehub.com.au/contact/",
+      "canonical": "https://mycarehub.com.au/contact/"
+    },
+    {
+      "name": "ndis",
+      "source": "https://test.mycarehub.com.au/ndis/",
+      "canonical": "https://mycarehub.com.au/ndis/"
+    },
+    {
+      "name": "faqs",
+      "source": "https://test.mycarehub.com.au/faqs/",
+      "canonical": "https://mycarehub.com.au/faqs/"
+    },
+    {
+      "name": "support-workers",
+      "source": "https://test.mycarehub.com.au/support-workers/",
+      "canonical": "https://mycarehub.com.au/support-workers/"
+    },
+    {
+      "name": "get-started",
+      "source": "https://test.mycarehub.com.au/get-started/",
+      "canonical": "https://mycarehub.com.au/get-started/"
+    },
+    {
+      "name": "referral",
+      "source": "https://test.mycarehub.com.au/referral/",
+      "canonical": "https://mycarehub.com.au/referral/"
+    },
+    {
+      "name": "blog",
+      "source": "https://test.mycarehub.com.au/blog/",
+      "canonical": "https://mycarehub.com.au/blog/"
+    },
+    {
+      "name": "personal-care",
+      "source": "https://test.mycarehub.com.au/services/personal-care/",
+      "canonical": "https://mycarehub.com.au/services/personal-care/"
+    },
+    {
+      "name": "social-care",
+      "source": "https://test.mycarehub.com.au/services/social-care/",
+      "canonical": "https://mycarehub.com.au/services/social-care/"
+    },
+    {
+      "name": "home-and-garden-care",
+      "source": "https://test.mycarehub.com.au/services/home-and-garden-care/",
+      "canonical": "https://mycarehub.com.au/services/home-and-garden-care/"
+    },
+    {
+      "name": "home-cleaning",
+      "source": "https://test.mycarehub.com.au/services/home-cleaning/",
+      "canonical": "https://mycarehub.com.au/services/home-cleaning/"
+    },
+    {
+      "name": "transport-care",
+      "source": "https://test.mycarehub.com.au/services/transport-care/",
+      "canonical": "https://mycarehub.com.au/services/transport-care/"
+    },
+    {
+      "name": "accessible-transport-care",
+      "source": "https://test.mycarehub.com.au/services/accessible-transport-care/",
+      "canonical": "https://mycarehub.com.au/services/accessible-transport-care/"
+    }
+  ]
+}

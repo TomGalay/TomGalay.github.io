@@ -2,7 +2,7 @@
 
 A new portfolio for a web and mobile developer with a creative eye.
 
-**Status:** first complete implementation. React/Vite/Framer Motion, one global stylesheet, self-hosted fonts, and real project screenshots. The blueprint archive remains separate. This source is configured to publish to `https://tomgalay.github.io/` through GitHub Actions. The earlier private review deployment is separate from GitHub Pages.
+**Status:** first complete implementation. React/Vite/Framer Motion, one global stylesheet, self-hosted fonts, and real project screenshots. The blueprint archive remains separate. This source publishes to `https://tomgalay.github.io/` through GitHub Actions. The earlier private review deployment is separate from GitHub Pages.
 
 ## Repository identity
 
@@ -11,7 +11,7 @@ A new portfolio for a web and mobile developer with a creative eye.
 | Preserved blueprint edition | [TomGalay.github.io.3.0](https://github.com/TomGalay/TomGalay.github.io.3.0) | [Archive](https://tomgalay.github.io/TomGalay.github.io.3.0/) |
 | New portfolio | `TomGalay/TomGalay.github.io` | `https://tomgalay.github.io/` |
 
-Renaming the old repository freed the root-site repository name; it did not create a new repository automatically. Before connecting this project, check whether that replacement repository already exists. Never push this project to the `.3.0` remote.
+Renaming the old repository freed the root-site repository name; it did not create a new repository automatically. The replacement repository exists and is public. Never push this project to the `.3.0` remote.
 
 ## Brief
 
@@ -39,9 +39,9 @@ Owner requirements:
 
 ## First release
 
-One responsive page: introduction, two substantial project showcases, compact About/background, and direct Contact links. Start with New Life Sta Rosa and WinLi Home, subject to final content verification and asset migration. Add Mycarehub as featured work when suitable media and contribution wording are ready.
+One responsive page led by Mycarehub: public website and worker app galleries, with website, iOS, and Android destinations. New Life Sta Rosa and WinLi Home follow. About displays all seven certifications with verification links. The existing two-page résumé is available to view and download.
 
-The first implementation milestone is a working desktop and mobile composition of the introduction and both project showcases. Review that composition before expanding the rest of the page.
+The hero uses the Mycarehub public website and worker app. Website captures come from the new design on `test.mycarehub.com.au`; public links use `mycarehub.com.au`.
 
 ## Running the project
 
@@ -52,6 +52,6 @@ npm run build
 npm run preview
 ```
 
-All public copy lives in `src/data.js`; styles live in `src/index.css`. The project uses root base `/`. `.github/workflows/deploy.yml` builds on pull requests and deploys pushes to `main` once Pages source is set to GitHub Actions.
+All public copy lives in `src/data.js`; styles live in `src/index.css`. The project uses root base `/`. `.github/workflows/deploy.yml` builds on pull requests and deploys pushes to `main` using the configured GitHub Actions Pages source.
 
 See [verification](docs/VERIFICATION.md) for checks and deployment limits.
