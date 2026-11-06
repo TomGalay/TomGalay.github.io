@@ -1,6 +1,6 @@
 # Architecture
 
-Status: intended structure, not implemented code.
+Status: implemented React/Vite application.
 
 ## Baseline
 
@@ -30,14 +30,14 @@ src/
     Navigation.jsx
     Hero.jsx
     Work.jsx
-    ProjectShowcase.jsx
     ProjectGallery.jsx
+    Elements.jsx
     About.jsx
     Contact.jsx
     Footer.jsx
 ```
 
-App composes the page. Work orders projects. ProjectShowcase renders one semantic article. ProjectGallery owns only its selected image index. Native `details`/`summary` provides optional project/experience detail. Use inline galleries initially rather than a modal viewer.
+App composes the page. Work orders projects. ProjectShowcase, defined within Work.jsx, renders one semantic article. ProjectGallery owns only its selected image index. Native `details`/`summary` provides optional project/experience detail. Use inline galleries initially rather than a modal viewer.
 
 Keep one global stylesheet initially, ordered as tokens, base, layout, component classes, responsive rules, reduced-motion fallbacks. Clearly name component classes; avoid global selectors that accidentally change unrelated sections. Extract modules only when a maintenance issue justifies it.
 

@@ -1,6 +1,6 @@
 # Design direction
 
-Status: proposed implementation direction. The owner’s exclusions are requirements; palette, typography, and composition are working defaults to assess in the first browser version.
+Status: implemented first direction, ready for owner review. Warm paper, dark ink, rust accent, oversized Archivo Black name, actual web/mobile compositions, staggered project articles, and a dark About section. The owner’s exclusions remain requirements.
 
 ## Character
 

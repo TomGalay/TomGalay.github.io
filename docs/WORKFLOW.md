@@ -16,9 +16,9 @@ Phase 4 is the main visual review point. Use the proposed design defaults to cre
 
 ## Commands
 
-This is a documentation-only project at present. No package manifest or runnable application exists yet.
+The project is implemented and includes a lockfile. Use `npm ci` followed by the commands below.
 
-Scaffolding must provide `npm run dev`, `npm run build`, and `npm run preview`. Use `npm ci` for a verified existing lockfile. Install only when inputs are ready; do not add dependencies merely to validate documents.
+Available commands: `npm run dev`, `npm run build`, and `npm run preview`. Use `npm ci` for a verified existing lockfile. Install only when inputs are ready; do not add dependencies merely to validate documents.
 
 ## Change loop
 

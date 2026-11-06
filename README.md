@@ -2,7 +2,7 @@
 
 A new portfolio for a web and mobile developer with a creative eye.
 
-**Status:** documentation stage. This workspace is the replacement project, separate from the archived blueprint portfolio. Application code, dependencies, and deployment have not been created yet.
+**Status:** first complete implementation. React/Vite/Framer Motion, one global stylesheet, self-hosted fonts, and real project screenshots. The blueprint archive remains separate. This source is configured to publish to `https://tomgalay.github.io/` through GitHub Actions. The earlier private review deployment is separate from GitHub Pages.
 
 ## Repository identity
 
@@ -45,4 +45,13 @@ The first implementation milestone is a working desktop and mobile composition o
 
 ## Running the project
 
-There are no application commands yet. During scaffolding, add `npm run dev`, `npm run build`, and `npm run preview`. Until then, validate documentation and links; do not report an application build as completed.
+```bash
+npm ci
+npm run dev
+npm run build
+npm run preview
+```
+
+All public copy lives in `src/data.js`; styles live in `src/index.css`. The project uses root base `/`. `.github/workflows/deploy.yml` builds on pull requests and deploys pushes to `main` once Pages source is set to GitHub Actions.
+
+See [verification](docs/VERIFICATION.md) for checks and deployment limits.

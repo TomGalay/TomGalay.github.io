@@ -24,7 +24,7 @@ This is Isaiah Thomas Galay’s new portfolio project. It is not the blueprint a
 
 ## Verification
 
-This project currently contains documentation only. Do not claim a build or deployment exists.
+The React/Vite application is implemented. Run `npm run build` after completed code changes and report browser verification accurately. The private review deployment is separate from the public GitHub Pages target.
 
 After scaffolding, `npm run build` must pass after each completed code change batch. Check affected visual behavior at narrow and wide widths. Use the production preview for release verification. No test framework is required initially; add tests for meaningful behavior when justified.
 

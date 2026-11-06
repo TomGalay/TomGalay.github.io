@@ -2,9 +2,9 @@
 
 ## Sources
 
-The previous archive checkout’s `src/data.js` and `public/projects/` were inspected earlier in this conversation. They are the migration sources for facts, links, and existing media. The archive remains in a separate local checkout; no source assets have been copied into this new project yet.
+The previous archive checkout’s `src/data.js` and `public/projects/` were inspected earlier in this conversation. They are the migration sources for facts, links, and existing media. Nine actual screenshots were migrated from the archive and compressed to WebP for this implementation. The archive remains separate.
 
-Copy and audit source records when the archive is available. External destinations and current employment status still need verification before release. Keep public content in the new app’s own `src/data.js`; components own presentation. Never invent outcomes, clients, technologies, metrics, or testimonials.
+Copy and audit source records when the archive is available. Employment records retain the archive’s supplied dates. Availability, phone number, and an unverified résumé download are omitted. Keep public content in the new app’s own `src/data.js`; components own presentation. Never invent outcomes, clients, technologies, metrics, or testimonials.
 
 ## Page structure
 

@@ -47,3 +47,9 @@ For a published regression, normally revert the faulty replacement commit or exp
 ## Local archive checkouts
 
 GitHub Desktop can show two `.3.0` entries because the local folders `Portfolio` and `TomGalay.github.io` both point to `TomGalay/TomGalay.github.io.3.0`. At setup, `Portfolio` was at `9f32b95` and the newer archive checkout at `1575572e`; both had clean working trees. They are two local copies of one remote, not two remote archive repositories. Leave their files intact. The replacement uses `Portfolio-Next` so its identity is clear.
+
+## First implementation handoff
+
+The React app and GitHub Pages workflow are implemented. Local builds pass. The first cloud environment could clone the public root repository but could not authenticate a push. The finished source was recovered into the authenticated Mac checkout for the root-site launch. A separate owner-private review deployment uses `.openai/hosting.json`; its successful publication is not evidence of a GitHub Pages release. The release source belongs in `Portfolio-Next`; authorized pushes use its authenticated GitHub Desktop session. Do not copy `node_modules`, `dist`, or a foreign `.git` directory.
+
+Workflow references checked against the official repositories and docs: [Pages workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages), [checkout](https://github.com/actions/checkout), and [setup-node](https://github.com/actions/setup-node).

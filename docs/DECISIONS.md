@@ -1,6 +1,6 @@
 # Decisions and open items
 
-Status: documentation stage. “Proposed” means a working default, not an owner-approved visual result. Update this record when implementation or feedback changes a choice.
+Status: first implementation, ready for owner review. “Proposed” means a working default, not an owner-approved visual result. Update this record when implementation or feedback changes a choice.
 
 ## Requirements and established state
 
@@ -13,7 +13,7 @@ Status: documentation stage. “Proposed” means a working default, not an owne
 | Create documentation before implementation | Current owner request |
 | Treat this workspace as the replacement project | Separate starter in `Portfolio-Next`; archive folders remain intact |
 
-## Proposed defaults
+## Implemented defaults
 
 | Decision | Reason |
 | --- | --- |
@@ -36,8 +36,8 @@ Status: documentation stage. “Proposed” means a working default, not an owne
 | Play Store destination | Rendering that action | Omit it |
 | Current résumé file | Rendering download action | Omit it |
 | Phone visibility preference | Adding phone contact | Use professional email and public profiles |
-| Archive source/media transfer | Content scaffolding | Use inspected inventory as planning only; do not pretend files are present |
-| Replacement GitHub repo existence/access | First remote connection | Inspect current state and verify identity before pushing |
+| Archive source/media transfer | Complete | Nine real project screens migrated as optimized WebP assets |
+| Replacement GitHub repo existence/access | Root repository created and public | This cloud environment can clone but cannot push without GitHub authentication |
 
 ## Deferred scope
 
