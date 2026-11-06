@@ -12,7 +12,7 @@ Copy and audit source records when the archive is available. Employment records 
 | --- | --- | --- |
 | Introduction | Name, direct role line, project previews, navigation | No prose paragraph |
 | Work | Mycarehub first; New Life Sta Rosa and WinLi Home follow | 20–35 words of visible summary per project |
-| Project detail | Contribution, relevant implementation, links | Up to three concise factual points, expandable inline |
+| Project detail | Short role, project summary, platform destination links, navigable images | No contribution disclosure; professional detail lives in Experience |
 | About | Short introduction, grouped experience, unrated skills, education | About paragraph around 40–60 words |
 | Contact | Email, LinkedIn, GitHub | No form or explanatory paragraph |
 | Footer | Name, year, archive link | One compact row, wrapping on mobile |
@@ -49,14 +49,14 @@ Inspect dimensions before deciding crops. Keep originals while generating smalle
 
 ## Background
 
-Group Mycarehub roles by company but retain separate dates for overlapping responsibilities. Summarize earlier freelance and internship work compactly. Use disclosure for extra detail rather than recreating the career diagram.
+Group Mycarehub roles by company but retain separate dates for overlapping responsibilities. Show the complete earlier freelance project history and both internships compactly, grouped by Freelance and Internships. Keep project names, role titles, exact periods, and summaries visible. Mycarehub gets the largest entry, with separate mobile and WordPress responsibilities from the owner’s résumé.
 
-Keep skills grouped and unrated. Only add a technology when actual work or explicit owner confirmation supports it. Keep the degree and honors concise; selected credentials must not occupy more space than professional work.
+Keep skills grouped and unrated. Only add a technology when actual work or explicit owner confirmation supports it. Keep the degree visible and emphasize the linked Summa Cum Laude honor. Preserve the archive’s four organization records, three additional awards, and four competition wins in smaller disclosures with the original award/competition evidence links. The separate 2023 honors evidence is not a change to the 2018–2022 study period.
 
 ## Before release
 
 - Reconfirm current roles, dates, availability, and preferred phone visibility. Default Contact to professional email and public profiles.
-- Verify the App Store and WinLi Home links. The previous Play Store link was `#`; omit it until a real destination exists.
+- New Life Sta Rosa has verified iOS and Android listings. Use `https://play.google.com/store/apps/details?id=com.nl.newLifeStaRosa` for Android and `https://www.newlifestarosa.com/` for its website. Show platform icons beside destination labels.
 - Resolve “Portfolio V1” links before reuse. Its former root repository link redirects to the blueprint edition and does not establish the first portfolio’s identity.
 - Keep study period and honors date separate; the archive lists 2018–2022 study and a 2023 honors entry.
 - View and download links serve the verified two-page résumé PDF. Replace the asset when the owner supplies a newer version.
@@ -71,3 +71,7 @@ Keep skills grouped and unrated. Only add a technology when actual work or expli
 - iOS: `https://apps.apple.com/au/app/mycarehub/id6450425879`.
 - Android: `https://play.google.com/store/apps/details?id=au.com.mycarehub`.
 - All seven credentials are copied from the archive’s certification records, with issuer, issue date, and original verification destinations. Do not describe them as currently active when validity is unverified.
+
+## Experience and education update sources
+
+The owner’s two-page `GALAY_CV_7-26.pdf` supplies Mycarehub responsibilities and dates, freelance history, and internship periods. The read-only `.3.0` archive supplies the separate Qadra Studio and JLCG role descriptions, organization records, and original linked awards/competitions. No metrics or unverified outcomes were added. New Life Android listing and its support website were verified directly against Google Play on 7 November 2026 (Asia/Manila).

@@ -37,7 +37,7 @@ src/
     Footer.jsx
 ```
 
-App composes the page. Work orders projects. ProjectShowcase, defined within Work.jsx, renders one semantic article. ProjectGallery owns only its selected image index. `FEATURED_PROJECT` supplies Mycarehub metadata and independent web/mobile media records; Work renders this full-width before `PROJECTS`. Hero reads the same featured record rather than relying on project array positions. Native `details`/`summary` provides optional project/experience detail. Use inline galleries initially rather than a modal viewer.
+App composes the page. Work orders projects. ProjectShowcase, defined within Work.jsx, renders one semantic article. ProjectGallery owns its selected image index and viewer visibility. ImageViewer renders a native modal dialog through a portal; its selection stays synchronized with the inline gallery. ProjectLinks supplies consistent web, Apple, and Android icons beside destination labels. `FEATURED_PROJECT` supplies Mycarehub metadata and independent web/mobile media records; Work renders this full-width before `PROJECTS`. Hero reads the same featured record rather than relying on project array positions. Native `details`/`summary` provides compact organization, award, and competition lists in Education. Project contribution disclosures have been removed; professional detail belongs in Experience. Education and its linked honors stay visible.
 
 Keep one global stylesheet initially, ordered as tokens, base, layout, component classes, responsive rules, reduced-motion fallbacks. Clearly name component classes; avoid global selectors that accidentally change unrelated sections. Extract modules only when a maintenance issue justifies it.
 
@@ -48,10 +48,11 @@ Keep one global stylesheet initially, ordered as tokens, base, layout, component
 | `PROFILE` | Display name, role, email, location, public profile links; optional verified résumé/availability |
 | `NAVIGATION` | Stable section ID and visible label |
 | `FEATURED_PROJECT` | Mycarehub contribution, three destination links, and independent public web / worker app galleries |
-| `PROJECTS` | Stable ID, title, year, actual platform, contribution, summary, media, links, optional detail points, featured state |
-| `EXPERIENCE` | Stable ID, company, role, start/end month, short contribution, optional detail |
+| `PROJECTS` | Stable ID, name, year, platform, role, summary, media, and destination links |
+| `EXPERIENCE` | Company group, period, optional summary, roles with exact periods, project names, summaries, and optional detail points |
 | `SKILL_GROUPS` | Stable ID, group name, item names; no proficiency values |
-| `EDUCATION` | Institution, qualification, period, honors |
+| `EDUCATION` | Institution, qualification, study period, linked honors, organization roles and periods |
+| `AWARDS`, `COMPETITIONS` | Original evidence links, titles, issuers/events, years, and competition results |
 | `CREDENTIALS` | Name, issuer, issue date, verification URL; all records render openly |
 
 Media includes path, alt text, intrinsic width, and height. Links include a visible label and real URL. Missing optional content omits its action or section. Define section IDs once and reuse them for navigation and anchors.
@@ -62,7 +63,8 @@ Use `${import.meta.env.BASE_URL}projects/...` for content asset URLs. New app ba
 
 - Navigation uses anchors, a skip link, and visible focus. A wrapping mobile header avoids drawer state and focus-management overhead.
 - Gallery controls are buttons with explicit labels and selected state. Keep focus on the triggering control and provide a polite image-position update. Never autoplay.
-- Native disclosures expose optional detail. Contribution and destination links remain visible when collapsed.
+- Gallery images open a native modal dialog with previous/next buttons, left/right arrow navigation, wraparound, horizontal touch swipes, and Escape/close/backdrop dismissal. Lock background scrolling while open and return focus to the gallery trigger on close. The displayed image fits the available viewport.
+- Native disclosures expose compact education extras. Degree, honors, professional experience, and project destination links stay visible without opening a disclosure.
 - Contact opens real email/profile destinations. Never imply an email was sent because a mail link opened.
 - Motion progressively enhances content. Reduced-motion preference and motion failures must not hide meaningful text or media.
 - No essential behavior depends on hover, fine pointers, or animation completion.

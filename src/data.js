@@ -32,8 +32,15 @@ export const UI = {
   heroWeb: "Explore the Mycarehub public website",
   work: "Work",
   about: "About",
-  contribution: "My contribution",
   background: "Education",
+  organizations: "Organizations",
+  awards: "Awards & achievements",
+  competitions: "Competitions",
+  enlarge: (name) => `Enlarge ${name} screenshot`,
+  closeViewer: "Close image viewer",
+  previousImage: "Previous image",
+  nextImage: "Next image",
+  viewerHelp: "Use arrow keys or swipe to browse. Esc to close.",
   certifications: "Certifications",
   resume: "View résumé",
   downloadResume: "Download PDF",
@@ -67,14 +74,14 @@ export const PROJECTS = [
     media: Array.from({ length: 6 }, (_, i) => ({
       src: asset(`projects/new-life-sta-rosa/newlife-${i + 1}.webp`),
       alt: `New Life Sta Rosa app — ${["splash", "home feed", "connect", "events", "media", "profile"][i]} screen`,
+      label: ["Splash", "Home feed", "Connect", "Events", "Media", "Profile"][i],
       width: 560,
       height: 1217,
     })),
-    links: [{ label: "View on the App Store", href: "https://apps.apple.com/ph/app/new-life-sta-rosa/id6787141995" }],
-    detail: [
-      "Worked in a team on the mobile application and supporting web CMS.",
-      "The app brings announcements, events, video, and livestreams together for members and guests.",
-      "The project includes Firebase login, reminders, and push notifications.",
+    links: [
+      { label: "Website", platform: "web", href: "https://www.newlifestarosa.com/" },
+      { label: "iOS app", platform: "ios", href: "https://apps.apple.com/ph/app/new-life-sta-rosa/id6787141995" },
+      { label: "Android app", platform: "android", href: "https://play.google.com/store/apps/details?id=com.nl.newLifeStaRosa" },
     ],
   },
   {
@@ -90,29 +97,56 @@ export const PROJECTS = [
     media: Array.from({ length: 3 }, (_, i) => ({
       src: asset(`projects/winli/winlihome-${i + 1}.webp`),
       alt: `WinLi Home website — ${["project gallery", "services", "contact"][i]} page`,
+      label: ["Project gallery", "Services", "Contact"][i],
       width: 1280,
       height: 633,
     })),
-    links: [{ label: "Visit the website", href: "https://winlihome.com/" }],
-    detail: [
-      "Designed and developed the company’s website.",
-      "Worked on branding and the visual identity alongside the web design.",
-      "Presented the company’s engineering services and project imagery in a responsive layout.",
-    ],
+    links: [{ label: "Website", platform: "web", href: "https://winlihome.com/" }],
   },
 ];
 
 export const EXPERIENCE = [
   {
     company: "Mycarehub",
+    period: "Nov 2023 — present",
+    summary: "Building the web systems and mobile app behind an Australian NDIS service provider.",
     roles: [
-      { title: "Mobile Developer", period: "2025 — present", summary: "A multiplatform app for bookings, schedules, shift reports, and on-shift GPS tracking." },
-      { title: "WordPress Developer", period: "2023 — present", summary: "Intake, scheduling, reporting, business operations, and AWS infrastructure." },
+      {
+        title: "Mobile Developer", period: "Nov 2025 — present",
+        summary: "Developed a Flutter app for support workers and administrators on iOS and Android.",
+        points: [
+          "Worker schedules, booking acceptance, and shift reports with support notes and travel details.",
+          "Mobile administration for participant and worker bookings, plus review and management of submitted reports.",
+          "Background GPS tracking during active shifts to support worker safety, flag anomalies, and help validate on-site details and timing.",
+        ],
+      },
+      {
+        title: "WordPress Developer", period: "Nov 2023 — present",
+        summary: "Developed the public website and custom systems for day-to-day service operations.",
+        points: [
+          "Multi-step participant and support-worker intake, referrals, and lead conversion for client relationship tracking.",
+          "User administration, NDIS plans, service agreement renewals, payments, documents, and checklists.",
+          "Recurring bookings and shift management with calendars and locations.",
+          "Automated shift-report PDFs, email and push reminders, and SEO.",
+          "AWS EC2 production and development infrastructure, automated backups, server upgrades, and security configuration.",
+        ],
+      },
     ],
   },
   {
-    company: "Freelance",
-    roles: [{ title: "Web Developer", period: "2021 — 2023", summary: "Websites and custom systems, from e-commerce to an international symposium." }],
+    company: "Freelance", period: "2021 — 2023",
+    roles: [
+      { title: "WordPress Developer", project: "E-commerce & matrix system", period: "May — Aug 2023", summary: "Built an e-commerce storefront with a matrix-based multilevel marketing system, user and admin dashboards, profiles, payments, store management, and email notifications." },
+      { title: "Lead Developer", project: "International ophthalmology symposium", period: "Mar — Apr 2023", summary: "Built registration, doctor verification, itineraries, speaker galleries, certificates, feedback forms, and admin dashboards. Maintained cPanel backups and email." },
+      { title: "WordPress Developer", project: "Website development", period: "Dec 2021 — Apr 2022", summary: "Built and updated website pages using WordPress, CSS, and Divi." },
+    ],
+  },
+  {
+    company: "Internships", period: "2022",
+    roles: [
+      { title: "WordPress Developer Intern", project: "Qadra Studio", period: "Aug — Dec 2022", summary: "Translated Figma designs into responsive WordPress pages with Elementor and Bricks, including custom post types and dynamic content." },
+      { title: "Web & Mobile Developer Intern", project: "JLCG", period: "Apr — Jul 2022", summary: "Created website redesigns and e-commerce concepts in WordPress." },
+    ],
   },
 ];
 
@@ -126,8 +160,15 @@ export const EDUCATION = {
   institution: "FEU Alabang",
   degree: "BS Information Technology",
   specialization: "Web & Mobile Applications",
-  honors: "Summa cum laude",
+  honors: "Summa Cum Laude",
+  honorsLink: "https://www.facebook.com/photo/?fbid=608447027958485&set=a.482462397223616",
   period: "2018 — 2022",
+  organizations: [
+    { name: "Junior Philippine Computer Society", role: "Internal Vice President", period: "2018 — 2020" },
+    { name: "Tertiary Honor Society", role: "Creatives Member", period: "2019 — 2020" },
+    { name: "Association for Computing Machinery", role: "Member", period: "2018 — 2020" },
+    { name: "Google Developer Student Club", role: "Member", period: "2019 — 2020" },
+  ],
 };
 
 export const CREDENTIALS = [
@@ -147,15 +188,10 @@ export const FEATURED_PROJECT = {
   role: "Web & mobile development",
   summary: "A public website that connects people with support, and a Flutter worker app for schedules, shift reports, and the work that happens in between.",
   technologies: "WordPress · PHP · Flutter · Dart · AWS · Firebase",
-  detail: [
-    "Developed the website and supporting systems for intake, scheduling, reporting, and business operations.",
-    "Built the multiplatform mobile app for bookings, schedules, shift reports, and on-shift GPS tracking.",
-    "Maintain the AWS infrastructure behind the service.",
-  ],
   links: [
-    { label: "mycarehub.com.au", href: "https://mycarehub.com.au/" },
-    { label: "iOS app", href: "https://apps.apple.com/au/app/mycarehub/id6450425879" },
-    { label: "Android app", href: "https://play.google.com/store/apps/details?id=au.com.mycarehub" },
+    { label: "Website", platform: "web", href: "https://mycarehub.com.au/" },
+    { label: "iOS app", platform: "ios", href: "https://apps.apple.com/au/app/mycarehub/id6450425879" },
+    { label: "Android app", platform: "android", href: "https://play.google.com/store/apps/details?id=au.com.mycarehub" },
   ],
   web: {
     id: "mycarehub-web",
@@ -179,3 +215,51 @@ export const FEATURED_PROJECT = {
     ].map(([file, label]) => ({src: asset(`projects/mycarehub/mobile/${file}.webp`), alt:`Mycarehub worker app — ${label} screen`, label, width:680, height:1478})),
   },
 };
+
+export const AWARDS = [
+  {
+    title: "Most Outstanding ITE Student",
+    issuer: "Philippine Society of Information Technology Educators — PSITE NCR",
+    year: "2022",
+    href: "https://www.facebook.com/FEUAlabang/posts/tamaraw-spotlight-congratulations-to-our-bsit-wma-student-isaiah-thomas-a-galay-/5346110262103764/",
+  },
+  {
+    title: "Best Research — Eureka 2022",
+    issuer: "FEU Alabang · CryptSim capstone",
+    year: "2022",
+    href: "https://www.facebook.com/Eureka2022/posts/pfbid0xSqN8hugqB3RwYx3PWAYtMVaTbBYFPnV9aTfc4MueuizXSYBC4BoTWX6fzdZ4eqnl",
+  },
+  {
+    title: "Academic Excellence Award",
+    issuer: "Junior Philippine Computer Society — JPCS",
+    year: "2022",
+    href: "https://www.facebook.com/FEUAlabang/photos/a.1304249696289861/5460492983998824/",
+  },
+];
+
+export const COMPETITIONS = [
+  {
+    title: "Microsoft Azure Fundamentals Challenge",
+    event: "Microsoft Cloud Skills Challenge · 2021",
+    result: "Champion",
+    href: "https://www.facebook.com/FEUAlabang/posts/pfbid038M4S1smQvnA2BqsG5w5dAv4KQJPpQfymBivm8qLk244Qfn48wGYjzwZnY2kZFF6pl",
+  },
+  {
+    title: "Ideathon Competition",
+    event: "UP CURSOR Computer Science Summit · 2021",
+    result: "Champion",
+    href: "https://www.facebook.com/JPCSFEUA/posts/pfbid02TbBuBbhN8o1hwFcHVpz2Rqo1UXPeEQ3vLKQuTapMFrg9oD6s5CEVtmmX8Hhheoiyl",
+  },
+  {
+    title: "Java Programming Competition",
+    event: "10th IT Skills Olympics · 2021",
+    result: "Champion",
+    href: "https://www.facebook.com/FEUAlabang/photos/4514163658631766/",
+  },
+  {
+    title: "Young Software Engineering Coding Competition",
+    event: "UP Los Baños · 2021",
+    result: "Champion",
+    href: "https://feualabang.edu.ph/features/feu-alabang-continues-to-charge-further-emerges-as-new-champions-in-local-coding-competition",
+  },
+];

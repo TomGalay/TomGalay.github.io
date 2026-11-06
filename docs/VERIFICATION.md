@@ -38,3 +38,15 @@ The supplied GitHub Pages workflow builds and deploys pushes to `main` after Git
 - Website destination uses `mycarehub.com.au`; source capture hostname is confined to documentation. Official iOS and Android listing destinations were verified.
 
 - The View résumé action opened the served PDF in a separate browser tab.
+
+## Gallery, experience, and education update — 7 November 2026 (Asia/Manila)
+
+- Production build passed: 90.81 kB JavaScript gzip and 6.27 kB CSS gzip. No dependency was added.
+- Four gallery viewers exercised in Safari against the production preview: Mycarehub public web, Mycarehub worker app, New Life Sta Rosa, and WinLi Home.
+- Verified previous/next controls, keyboard arrow navigation, first/last wraparound, Escape dismissal, close-button dismissal, and synchronized inline selection. Corrected focus restoration and confirmed that dismissal focuses the originating gallery trigger.
+- Inspected desktop rendering and responsive previews at 320px, 360px, 768px, and 1440px. Corrected the 320px gallery minimum-width/caption overflow; reinspection showed contained media, dates, captions, and links.
+- Checked the expanded Mycarehub roles, grouped freelance projects, both internships, visible linked honors, and all three education disclosures. Original evidence links render for three awards and four competition results.
+- A data validation pass confirmed all 22 gallery image files, valid gallery initial positions, descriptive labels and dimensions, 21 HTTPS destination records, seven employment roles, four organization records, three awards, and four competitions.
+- New Life Sta Rosa's Android listing was verified directly against Google Play; website/iOS/Android links render with platform icons. Project contribution disclosures were removed.
+- Touch swipe handling, reduced-motion fallback, and native modal behavior were reviewed in code. Physical touch gestures, OS reduced-motion settings, backdrop dismissal, and a full keyboard accessibility audit were not exercised. No formal accessibility certification is claimed.
+- Changes are in the attached project workspace. No commit, push, or public deployment was performed. The separate original `Portfolio-Next` checkout and the `.3.0` archive were not modified.

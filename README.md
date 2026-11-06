@@ -39,7 +39,7 @@ Owner requirements:
 
 ## First release
 
-One responsive page led by Mycarehub: public website and worker app galleries, with website, iOS, and Android destinations. New Life Sta Rosa and WinLi Home follow. About displays all seven certifications with verification links. The existing two-page résumé is available to view and download.
+One responsive page led by Mycarehub: public website and worker app galleries, with website, iOS, and Android destinations. New Life Sta Rosa and WinLi Home follow. All project galleries support an enlarged viewer with button, keyboard, and swipe navigation. Website, iOS, and Android destinations use platform icons. About includes expanded Mycarehub experience, grouped freelance projects and internships, visible Summa Cum Laude honors, compact organization/award/competition lists, and all seven certifications with verification links. The existing two-page résumé is available to view and download.
 
 The hero uses the Mycarehub public website and worker app. Website captures come from the new design on `test.mycarehub.com.au`; public links use `mycarehub.com.au`.
 

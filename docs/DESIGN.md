@@ -18,9 +18,9 @@ The blueprint’s grid, document numbers, drafting labels, stamps, coordinate cu
 
 ## Page rhythm
 
-Lead Work with a full-width Mycarehub feature: large title, concise contribution, three destination links, and side-by-side public web / worker-app galleries. Stack these galleries on small screens. Follow with the other project articles. Use a two-column text/media composition for one and a broad web canvas for the other. Vary proportions rather than repeating identical cards. Keep titles, contribution, and destination links close to the relevant media.
+Lead Work with a full-width Mycarehub feature: large title, concise contribution, three destination links with platform icons, and side-by-side public web / worker-app galleries. Stack these galleries on small screens. Follow with the other project articles. Use a two-column text/media composition for one and a broad web canvas for the other. Vary proportions rather than repeating identical cards. Keep titles, contribution, and destination links close to the relevant media.
 
-“Work”, “About”, and “Contact” are sufficient headings. Do not automatically add a paragraph beneath each. Education remains in an optional disclosure. All seven certifications are displayed openly in About as linked rows with issuer and issue date.
+“Work”, “About”, and “Contact” are sufficient headings. Do not automatically add a paragraph beneath each. Education and its linked Summa Cum Laude honor are visible beside the introduction. Organizations, awards, and competitions use compact disclosures. Experience follows at full width: Mycarehub leads with separate mobile and WordPress role columns; grouped freelance projects and internships follow. All seven certifications are displayed openly in About as linked rows with issuer and issue date.
 
 ## Starting tokens
 
@@ -74,3 +74,7 @@ Reduced-motion mode removes positional reveals, tilt, and smooth scrolling while
 ## Acceptance
 
 The page must communicate both web and mobile development without reading a biography. Actual work dominates the visuals. Remove any label, paragraph, border, badge, or animation that adds no information or useful feedback.
+
+## Screenshot viewer
+
+A visible enlarge control and the screenshot canvas open a dark, viewport-fitted viewer. Keep the unrotated screenshot fully visible, with the project title, a short screen caption, position, previous/next buttons, and a close control. Keep all controls usable at 320px. No autoplay or decorative motion.
