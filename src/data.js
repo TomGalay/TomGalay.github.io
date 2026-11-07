@@ -77,7 +77,6 @@ export const PROJECTS = [
       height: 1217,
     })),
     links: [
-      { label: "Website", platform: "web", href: "https://www.newlifestarosa.com/" },
       { label: "iOS app", platform: "ios", href: "https://apps.apple.com/ph/app/new-life-sta-rosa/id6787141995" },
       { label: "Android app", platform: "android", href: "https://play.google.com/store/apps/details?id=com.nl.newLifeStaRosa" },
     ],
