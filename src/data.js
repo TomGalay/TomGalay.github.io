@@ -28,7 +28,7 @@ export const UI = {
   navigation: "Main navigation",
   home: "Isaiah Galay — back to top",
   heroMobile: "Explore the Mycarehub worker app",
-  heroWeb: "Explore the Mycarehub public website",
+  heroWeb: "Explore the Mycarehub website",
   work: "Work",
   about: "About",
   background: "Education",
@@ -184,7 +184,7 @@ export const FEATURED_PROJECT = {
   name: "Mycarehub",
   year: "2023 — present",
   role: "Web & mobile development",
-  summary: "A public website that connects people with support, and a Flutter worker app for schedules, shift reports, and the work that happens in between.",
+  summary: "Developed the website, business management systems, and Flutter app for Mycarehub Pty Ltd, an Australian company and registered NDIS provider. The web platform handles participant and worker intake, referrals, recurring bookings, NDIS plans, service agreements, documents, and reporting. The iOS and Android app supports schedules, booking management, shift reports, and on-shift GPS tracking, backed by automated notifications and AWS infrastructure.",
   technologies: "WordPress · PHP · Flutter · Dart · AWS · Firebase",
   links: [
     { label: "Website", platform: "web", href: "https://mycarehub.com.au/" },
@@ -193,13 +193,13 @@ export const FEATURED_PROJECT = {
   ],
   web: {
     id: "mycarehub-web",
-    name: "Mycarehub public website",
-    label: "Public website",
+    name: "Mycarehub website",
+    label: "Website",
     kind: "web",
     initialImage: 0,
     media: [
       ["home", "Home"], ["services", "Services"], ["about", "About"], ["how-we-work", "How we work"], ["contact", "Contact"],
-    ].map(([file, label]) => ({src: asset(`projects/mycarehub/web/${file}.webp`), alt: `Mycarehub public website — ${label} page`, label, width:1280, height:720})),
+    ].map(([file, label]) => ({src: asset(`projects/mycarehub/web/${file}.webp`), alt: `Mycarehub website — ${label} page`, label, width:1280, height:720})),
   },
   mobile: {
     id: "mycarehub-app",

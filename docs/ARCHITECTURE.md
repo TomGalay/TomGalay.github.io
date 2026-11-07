@@ -62,7 +62,7 @@ Use `${import.meta.env.BASE_URL}projects/...` for content asset URLs. New app ba
 ## Interaction ownership
 
 - Navigation uses anchors, a skip link, and visible focus. A wrapping mobile header avoids drawer state and focus-management overhead.
-- Gallery controls are buttons with explicit labels and selected state. Keep focus on the triggering control and provide a polite image-position update. Never autoplay.
+- Gallery controls are buttons with explicit labels and selected state. Keep focus on the triggering control and announce the selected screen name politely; display the screen position only in the enlarged viewer. Never autoplay.
 - Gallery images open a native modal dialog with previous/next buttons, left/right arrow navigation, wraparound, horizontal touch swipes, and Escape/close/backdrop dismissal. Lock background scrolling while open and return focus to the gallery trigger on close. The displayed image fits the available viewport.
 - Native disclosures expose compact education extras. Degree, honors, professional experience, and project destination links stay visible without opening a disclosure.
 - Contact opens real email/profile destinations. Never imply an email was sent because a mail link opened.

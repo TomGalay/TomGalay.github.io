@@ -11,7 +11,7 @@ Copy and audit source records when the archive is available. Employment records 
 | Area | Content | Initial budget |
 | --- | --- | --- |
 | Introduction | Name, direct role line, project previews, navigation | No prose paragraph |
-| Work | Mycarehub first; New Life Sta Rosa and WinLi Home follow | 20–35 words of visible summary per project |
+| Work | Mycarehub first; New Life Sta Rosa and WinLi Home follow | 20–35 words per project; the featured Mycarehub summary may be longer to explain its broader scope |
 | Project detail | Short role, project summary, platform destination links, navigable images | No contribution disclosure; professional detail lives in Experience |
 | About | Short introduction, grouped experience, unrated skills, education | About paragraph around 40–60 words |
 | Contact | Email, LinkedIn, GitHub | No form or explanatory paragraph |
@@ -75,3 +75,7 @@ Keep skills grouped and unrated. Only add a technology when actual work or expli
 ## Experience and education update sources
 
 The owner’s two-page `GALAY_CV_7-26.pdf` supplies Mycarehub responsibilities and dates, freelance history, and internship periods. The read-only `.3.0` archive supplies the separate Qadra Studio and JLCG role descriptions, organization records, and original linked awards/competitions. No metrics or unverified outcomes were added. New Life Android listing and its support website were verified directly against Google Play on 7 November 2026 (Asia/Manila).
+
+## Work presentation refinement
+
+Work has no project-count label. Mycarehub’s web gallery is labeled “Website”; inline galleries show only the selected screen name, with numeric position reserved for the enlarged viewer. The expanded Mycarehub summary covers web operations, mobile workflows, notifications, and AWS infrastructure, using the owner’s verified experience. Its legal identity is Mycarehub Pty Ltd, an Australian private company (ABN 97 663 227 834), and an approved NDIS provider; verified against [ABN Lookup](https://abr.business.gov.au/ABN/View?id=97663227834) and the [NDIS Commission](https://www.ndiscommission.gov.au/provider-registration/mycarehub-pty-ltd).

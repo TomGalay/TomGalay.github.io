@@ -18,7 +18,7 @@ function ProjectShowcase({ project }) {
 export default function Work() {
   const featured = FEATURED_PROJECT;
   return <section id="work" className="work container" aria-labelledby="work-title">
-    <Reveal className="section-title"><h2 id="work-title">{UI.work}<span>.</span></h2><span className="work-count">({String(PROJECTS.length + 1).padStart(2, "0")})</span></Reveal>
+    <Reveal className="section-title"><h2 id="work-title">{UI.work}<span>.</span></h2></Reveal>
     <article id={featured.id} className="featured-project" aria-labelledby="mycarehub-title">
       <Reveal className="featured-heading">
         <div><div className="project-title"><h3 id="mycarehub-title">{featured.name}</h3><span>{featured.year}</span></div><p className="project-role">{featured.role}</p></div>

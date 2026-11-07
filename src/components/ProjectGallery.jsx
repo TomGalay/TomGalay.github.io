@@ -22,7 +22,7 @@ export default function ProjectGallery({ project, single = false }) {
     {viewerOpen && <ImageViewer project={project} active={active} onChange={setActive} onClose={() => setViewerOpen(false)} opener={opener} />}
     <div className="gallery-controls" role="group" aria-label={UI.gallery(project.name)}>
       <div className="gallery-pages">{project.media.map((_, index) => <button key={index} type="button" aria-label={UI.viewScreen(project.name, index + 1)} aria-pressed={index === active} onClick={() => setActive(index)}>{String(index + 1).padStart(2, "0")}</button>)}</div>
-      <span className="gallery-status" aria-live="polite" aria-atomic="true">{image.label && <span className="screen-name">{image.label} · </span>}{UI.selectedScreen(active + 1, project.media.length)}</span>
+      <span className="gallery-status" aria-live="polite" aria-atomic="true">{image.label}</span>
     </div>
   </div>;
 }
