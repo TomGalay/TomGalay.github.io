@@ -50,3 +50,10 @@ The supplied GitHub Pages workflow builds and deploys pushes to `main` after Git
 - New Life Sta Rosa's Android listing was verified directly against Google Play; website/iOS/Android links render with platform icons. Project contribution disclosures were removed.
 - Touch swipe handling, reduced-motion fallback, and native modal behavior were reviewed in code. Physical touch gestures, OS reduced-motion settings, backdrop dismissal, and a full keyboard accessibility audit were not exercised. No formal accessibility certification is claimed.
 - Changes are in the attached project workspace. No commit, push, or public deployment was performed. The separate original `Portfolio-Next` checkout and the `.3.0` archive were not modified.
+
+## Interaction polish — 7 November 2026
+
+- `npm run build` passed using a temporary local dependency tree matching all direct locked versions. The npm registry was unreachable and some transitive versions differed from the lockfile.
+- Safari rendered the built JavaScript and CSS in an offline review page at 320px, 360px, 768px, and 1440px. No horizontal page overflow was detected. The environment blocked the Vite preview server from opening a local port.
+- All four galleries passed simulated horizontal swipe and wraparound checks, inline/viewer selection synchronization, and focus restoration. Tap-sized movement, vertical movement, canceled touches, and multi-touch sequences did not advance the gallery. Physical touch hardware was not tested.
+- Simulated clipboard success and failure verified the temporary checkmark, its reset, and the original icon on failure.

@@ -67,7 +67,7 @@ DOM reading order stays logical at every width. No horizontal page scrolling, cl
 
 ## Motion
 
-Reveal sections once with opacity and a 12–24px offset over roughly 350–600ms. Use the shared easing. Hover/focus feedback is small and immediate. Galleries change only through user input.
+Reveal sections once with opacity and a 12–24px offset over roughly 350–600ms. Use the shared easing. Hover/focus feedback is small and immediate. Navigation links underline on hover and keyboard focus. The selected screenshot number gains a short underline, and the copy-email icon briefly becomes a checkmark after a successful copy. Galleries change only through user input.
 
 Reduced-motion mode removes positional reveals, tilt, and smooth scrolling while keeping every section visible. Pointer effects apply only to fine pointers. Keep the native cursor. Exclude scroll hijacking, loading sequences, continuous marquees, and decorative 3D scenes from the first release.
 

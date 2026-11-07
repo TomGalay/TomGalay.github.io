@@ -48,7 +48,7 @@ Keep one global stylesheet initially, ordered as tokens, base, layout, component
 | `PROFILE` | Display name, role, email, location, public profile links; optional verified résumé/availability |
 | `NAVIGATION` | Stable section ID and visible label |
 | `FEATURED_PROJECT` | Mycarehub contribution, three destination links, and independent public web / worker app galleries |
-| `PROJECTS` | Stable ID, name, year, platform, role, summary, media, and destination links |
+| `PROJECTS` | Stable ID, name, year, platform, summary, media, and destination links |
 | `EXPERIENCE` | Company group, period, optional summary, roles with exact periods, project names, summaries, and optional detail points |
 | `SKILL_GROUPS` | Stable ID, group name, item names; no proficiency values |
 | `EDUCATION` | Institution, qualification, study period, linked honors, organization roles and periods |
@@ -62,7 +62,7 @@ Use `${import.meta.env.BASE_URL}projects/...` for content asset URLs. New app ba
 ## Interaction ownership
 
 - Navigation uses anchors, a skip link, and visible focus. A wrapping mobile header avoids drawer state and focus-management overhead.
-- Gallery controls are buttons with explicit labels and selected state. Keep focus on the triggering control and announce the selected screen name politely; display the screen position only in the enlarged viewer. Never autoplay.
+- Gallery controls are buttons with explicit labels and selected state. Keep focus on the triggering control and announce the selected screen name politely; display the screen position only in the enlarged viewer. A horizontal one-finger swipe steps through the inline screenshots with wraparound. A tap opens the selected screenshot. Vertical panning and pinch zoom stay native. Galleries never autoplay.
 - Gallery images open a native modal dialog with previous/next buttons, left/right arrow navigation, wraparound, horizontal touch swipes, and Escape/close/backdrop dismissal. Lock background scrolling while open and return focus to the gallery trigger on close. The displayed image fits the available viewport.
 - Native disclosures expose compact education extras. Degree, honors, professional experience, and project destination links stay visible without opening a disclosure.
 - Contact opens real email/profile destinations. Never imply an email was sent because a mail link opened.

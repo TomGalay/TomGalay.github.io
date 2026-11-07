@@ -12,7 +12,7 @@ Copy and audit source records when the archive is available. Employment records 
 | --- | --- | --- |
 | Introduction | Name, direct role line, project previews, navigation | No prose paragraph |
 | Work | Mycarehub first; New Life Sta Rosa and WinLi Home follow | 20–35 words per project; the featured Mycarehub summary may be longer to explain its broader scope |
-| Project detail | Short role, project summary, platform destination links, navigable images | No contribution disclosure; professional detail lives in Experience |
+| Project detail | Project summary, platform destination links, navigable images | No role subtext or contribution disclosure; professional detail lives in Experience |
 | About | Short introduction, grouped experience, unrated skills, education | About paragraph around 40–60 words |
 | Contact | Email, LinkedIn, GitHub | No form or explanatory paragraph |
 | Footer | Name, year, archive link | One compact row, wrapping on mobile |
@@ -32,7 +32,7 @@ Budgets guide editing; preserve necessary credit and useful alt text. Essential 
 Draft summaries to verify during implementation:
 
 - New Life Sta Rosa: “Helped build a church app for announcements, events, videos, and livestreams, supported by a web CMS.”
-- WinLi Home: “Designed the branding and website for a structural engineering company in Alhambra, California.”
+- WinLi Home: “Designed and built a website and visual identity for a structural engineering company in Alhambra, California.”
 
 ## Asset inventory to migrate
 

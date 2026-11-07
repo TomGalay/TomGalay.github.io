@@ -65,8 +65,7 @@ export const PROJECTS = [
     year: "2026",
     platform: "Mobile app",
     kind: "mobile",
-    summary: "A place for a church community to stay connected through announcements, events, videos, and livestreams.",
-    role: "Team project · App & CMS development",
+    summary: "Helped build a church community app for announcements, events, videos, and livestreams, supported by a web CMS.",
     technologies: "iOS · Android · Web CMS",
     initialImage: 1,
     media: Array.from({ length: 6 }, (_, i) => ({
@@ -87,8 +86,7 @@ export const PROJECTS = [
     year: "2024",
     platform: "Website & identity",
     kind: "web",
-    summary: "Branding and a website for a structural engineering company in Alhambra, California. A home for the spaces they help create.",
-    role: "Design · Development · Branding",
+    summary: "Designed and built a website and visual identity for a structural engineering company in Alhambra, California.",
     technologies: "Responsive web · Visual identity",
     initialImage: 0,
     media: Array.from({ length: 3 }, (_, i) => ({
@@ -182,7 +180,6 @@ export const FEATURED_PROJECT = {
   id: "mycarehub",
   name: "Mycarehub",
   year: "2023 — present",
-  role: "Web & mobile development",
   summary: "Developed the website, business management systems, and Flutter app for Mycarehub Pty Ltd, an Australian company and registered NDIS provider. The web platform handles participant and worker intake, referrals, recurring bookings, NDIS plans, service agreements, documents, and reporting. The iOS and Android app supports schedules, booking management, shift reports, and on-shift GPS tracking, backed by automated notifications and AWS infrastructure.",
   technologies: "WordPress · PHP · Flutter · Dart · AWS · Firebase",
   links: [
