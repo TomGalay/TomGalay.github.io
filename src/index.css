@@ -30,6 +30,36 @@
   position: relative;
 }
 
+@keyframes hero-settle {
+  from {
+    opacity: var(--entry-opacity);
+    translate: 0 var(--entry-rise);
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-role {
+    --entry-opacity: .8;
+    --entry-rise: 6px;
+    animation: hero-settle 360ms var(--ease-out);
+  }
+
+  .hero-browser,
+  .hero-phone {
+    --entry-opacity: .45;
+    --entry-rise: 14px;
+    animation: hero-settle 480ms var(--ease-out) 40ms backwards;
+  }
+
+  .hero-phone {
+    animation-delay: 100ms;
+  }
+}
+
 .navigation nav a::after {
   content: "";
   position: absolute;

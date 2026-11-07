@@ -67,6 +67,8 @@ DOM reading order stays logical at every width. No horizontal page scrolling, cl
 
 ## Motion
 
+The opening keeps the name and navigation steady. The role line settles first, followed by the web and phone previews in their existing tilted positions. The entrance finishes within 580ms and is skipped for reduced motion. The browser preloads the two Latin font files and both opening screenshots.
+
 Reveal sections once with opacity and a 12–24px offset over roughly 350–600ms. Use the shared easing. Hover/focus feedback is small and immediate. Navigation links underline on hover and keyboard focus. The selected screenshot number gains a short underline, and the copy-email icon briefly becomes a checkmark after a successful copy. Galleries change only through user input.
 
 Reduced-motion mode removes positional reveals, tilt, and smooth scrolling while keeping every section visible. Pointer effects apply only to fine pointers. Keep the native cursor. Exclude scroll hijacking, loading sequences, continuous marquees, and decorative 3D scenes from the first release.
